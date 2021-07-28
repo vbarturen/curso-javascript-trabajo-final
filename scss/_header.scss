@@ -1,0 +1,27 @@
+/*Menú Bootstrap*/
+.header .navbar .navbar-expand-lg .navbar-dark{
+    background-color: $negro;
+}
+.header .navbar .navbar-expand-lg .navbar-dark .header-logo{
+    margin-left: 25%;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: $fucsia;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}   
+.menuDecoration a:hover{
+    background-color: $negro;
+    color: $verde;
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
+    color: $verde;
+}
+.dropdown-menu{
+    background-color: $negro;
+}
+a.dropdown-item{
+    color:$fucsia;
+    text-align: left;
+    margin-left: -9px;
+}

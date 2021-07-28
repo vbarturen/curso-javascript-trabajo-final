@@ -1,0 +1,16 @@
+/*PÁGINA MÚSICA*/
+.section-musica{
+    .section-musica__bloque{
+        @include encasillado (space-evenly);
+        .section-musica__bloque--iframe-musica{
+            margin-top: 10%;
+            margin-bottom: 10%;
+            border: 0; 
+            width: 500px;
+            height: 620px;
+            &:hover{
+                @include escalar;
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+body{
+    background-color: $negro;
+    text-align: center;
+    font-size: $textobody;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: $blanco;
+    h2{
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold; 
+        font-size: $tituloh2;
+        color: $fucsia;
+        text-transform: uppercase;
+        margin-bottom: 3%;
+    }
+    h3{
+        text-decoration: underline;
+        text-decoration-style: dashed;
+        font-size: $tituloh3;
+        font-family:'Oswald';
+        font-weight: bold;  
+        color: $verde;
+        text-transform: capitalize;
+    }
+}
+/*Links*/
+a:link {
+    color: #00ff94;
+    font-weight: bold;
+}
+/*Links visitados*/
+a:visited {
+    color: white;
+    font-weight: bold;
+}
+/*Hover links*/
+a:hover {
+    color: #f800ff;
+} 
+/*Sections*/
+section{
+    margin-bottom: 70px;
+}
+/*Articles*/
+article{
+    margin-bottom: 70px;
+}
+/*Titulo imagen sin animación*/
+.titulo--sin-animacion{
+    width: 600px;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}

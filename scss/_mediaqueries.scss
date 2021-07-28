@@ -1,0 +1,146 @@
+/*MOBILE MEDIA QUERY*/
+@media only screen and (max-width: 768px) {
+body{
+    font-size: $textobody/1.3;
+    margin-left: 0;
+}
+body h2{
+    font-size: $tituloh2/1.5;
+    margin-bottom: 8%;
+    color: $fucsia;
+}
+body h3{
+    font-size: $tituloh3/1.5;
+    margin-bottom: 5%;
+    color: $verde;
+}
+section{
+    margin-bottom: 30px;
+}
+article{
+    margin-bottom: 30px;
+}
+/*Título Tranki Punki*/
+.titulo--sin-animacion{
+    width: 250px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+/*Título Tranki Punki Animado*/
+.container .row .container__row--titulo-animado{
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    animation-duration: 8s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        }
+    100% {
+        opacity: 1;
+        }
+}
+body{
+    width: 100%;
+}
+/*Menú*/
+.dropdown-toggle{
+    margin-bottom: -10px;
+}
+a.dropdown-item{
+    color:$fucsia;
+    font-size: 12px;
+    text-align: center;
+    margin-left: auto;
+    margin-bottom: 3px;
+}
+    /*PÁGINA BIO*/
+/*Grid*/
+.seccion-integrantes__main{
+    width: 70%;
+}
+/*PÁGINA GALERÍA*/
+.imgGaleria{
+    width: 300px; 
+}
+/*PÁGINA MÚSICA*/
+.section-musica{
+    .section-musica__bloque{
+        .section-musica__bloque--iframe-musica{
+            margin-top: 5%;
+            margin-bottom: 5%;
+            border: 0; 
+            width: 340px;
+            height: 460px;
+        }
+    }
+}
+/*PÁGINA VÍDEOS*/
+.videos{
+    @include encasillado(center);
+    .videos__cada-video{
+    max-width: 90%;
+    padding: 5%, 5%, 5%, 5%;
+    }
+}
+/*PÁGINA PRENSA*/
+.texto-en-bloque{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: $textobody;
+    text-align: center;
+}
+/*GRID PRENSA*/
+.seccion-prensa{
+    margin-left: 15px;
+    margin-right: 15px;
+    .seccion-prensa__main{
+        grid-row-gap: 25px;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+    .prensa__main__link{
+        width: 100%;
+        height: 100%;
+    }
+    .prensa__main__link--telam{
+        grid-column-start: 1; 
+        grid-row-start: 1;
+    }
+    .prensa__main__link--indiehoy{
+        grid-column-start: 1;  
+        grid-row-start: 2;
+    }
+    .prensa__main__link--laizquierdadiario{
+        grid-column-start: 1;  
+        grid-row-start: 3;
+    }
+    .prensa__main__link--lavoz{
+        grid-column-start: 2;  
+        grid-row-start: 1;
+    }
+    .prensa__main__link--marcha{
+        grid-column-start: 2;  
+        grid-row-start: 2;
+    }
+    .prensa__main__link--cba24n{
+        grid-column-start: 2;  
+        grid-row-start: 3;
+    }
+    .seccion-prensa__main__link--width{
+        width:70%;
+    }
+}
+/*CONTACTO FORMULARIO*/
+.seccion-contacto{
+    margin-left: 5%;
+    margin-right: 5%;
+    .seccion-contacto__formulario{
+        font-size: $textobody;
+    }
+}
+}

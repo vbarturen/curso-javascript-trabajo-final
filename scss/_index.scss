@@ -1,0 +1,27 @@
+/*Título Tranki Punki Animado*/
+.container{
+    .row{
+        .container__row--titulo-animado {
+            width: 70%;
+            margin-top: 5%;
+            animation-duration: 8s;
+            animation-name: aparecer;
+            animation-iteration-count: 1;
+            @keyframes aparecer {
+                    0% {
+                        opacity: 0;
+                        }
+                    100% {
+                        opacity: 1;
+                        }
+            }
+        }
+    }
+}
+/*Vídeo y Player de música*/
+.video{
+    width: 100%;
+}
+.audio-player{
+    width: 100%;
+}

@@ -1,0 +1,13 @@
+/*Footer*/
+hr{
+    background: $gradiente;
+    height: 5px;
+    border: none;
+}
+footer{
+    color: $verde;
+    font-size: $textofooter;
+    .footer--textoderechos{
+        color: $fucsia;
+    }
+}
