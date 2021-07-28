@@ -14,42 +14,67 @@
         margin-left: 5%;
         margin-right: 5%;
         margin-top: 5%;
-        margin-bottom: 15%;
-        grid-template-columns: 50% 50%;
+        margin-bottom: 12%;
+        grid-template-columns: 20% 30% 30% 20%;
         grid-template-rows: 33% 33% 34%;
         grid-row-gap: 50px;
         align-items: center;
     }
-    .prensa__main__link{
+    .seccion-prensa__main__link{
         width: 100%;
         height: 100%;
     }
-    .prensa__main__link--telam{
+    .seccion-prensa__main__link--nada{
         grid-column-start: 1; 
         grid-row-start: 1;
     }
-    .prensa__main__link--indiehoy{
-        grid-column-start: 1;  
+    .seccion-prensa__main__link--nada2{
+        grid-column-start: 1; 
         grid-row-start: 2;
     }
-    .prensa__main__link--laizquierdadiario{
-        grid-column-start: 1;  
+    .seccion-prensa__main__link--nada3{
+        grid-column-start: 1; 
         grid-row-start: 3;
     }
-    .prensa__main__link--lavoz{
-        grid-column-start: 2;  
+    .seccion-prensa__main__link--telam{
+        grid-column-start: 2; 
         grid-row-start: 1;
     }
-    .prensa__main__link--marcha{
+
+    .seccion-prensa__main__link--lavoz{
         grid-column-start: 2;  
         grid-row-start: 2;
     }
-    .prensa__main__link--cba24n{
+    .seccion-prensa__main__link--cba24n{
         grid-column-start: 2;  
+        grid-row-start: 3;
+    }
+    .seccion-prensa__main__link--indiehoy{
+        grid-column-start: 3;  
+        grid-row-start: 1;
+    }
+    .seccion-prensa__main__link--laizquierdadiario{
+        grid-column-start: 3;  
+        grid-row-start: 2;
+    }
+    .seccion-prensa__main__link--marcha{
+        grid-column-start: 3;  
+        grid-row-start: 3;
+    }
+    .seccion-prensa__main__link--nada4{
+        grid-column-start: 4; 
+        grid-row-start: 1;
+    }
+    .seccion-prensa__main__link--nada5{
+        grid-column-start: 4; 
+        grid-row-start: 2;
+    }
+    .seccion-prensa__main__link--nada6{
+        grid-column-start: 4; 
         grid-row-start: 3;
     }
     .seccion-prensa__main__link--width{
-        width:65%;
+        width: 65%;
         &:hover{
             @include escalar;
         }
