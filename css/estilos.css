@@ -90,7 +90,7 @@ article {
 }
 
 .menu-decoration a:hover {
-  background-color: black;
+  background-color: transparent;
   color: #00ff94;
 }
 
@@ -99,13 +99,16 @@ article {
 }
 
 .dropdown-menu {
-  background-color: black;
+  background-color: transparent;
+  border: transparent;
 }
 
 a.dropdown-item {
   color: #f800ff;
   text-align: left;
   margin-left: -9px;
+  background-color: transparent;
+  border: transparent;
 }
 
 /*Título Tranki Punki Animado*/
@@ -133,15 +136,15 @@ a.dropdown-item {
   top: 110px;
   left: 0;
   width: 100%;
-  height: 75%;
+  height: 71%;
   object-fit: cover;
   object-position: center;
 }
 
 .audio-player {
   margin-top: 16%;
-  margin-bottom: 2%;
-  width: 98%;
+  margin-bottom: 0%;
+  width: 100%;
 }
 
 /*PÁGINA BIO*/
@@ -471,8 +474,8 @@ footer .texto-derechos {
   /*INDEX*/
   /*Título Tranki Punki Animado*/
   .container .row .titulo-animado {
+    margin-top: -170%;
     width: 100%;
-    padding-top: 35%;
     animation-duration: 8s;
     animation-name: aparecer;
     animation-iteration-count: 1;
@@ -488,16 +491,16 @@ footer .texto-derechos {
   }
   /*Vídeo y Player de música*/
   .video {
-    position: absolute;
-    top: 80px;
+    position: relative;
+    top: 10px;
     left: 0;
     width: 100%;
-    height: 60%;
+    height: 400px;
     object-fit: cover;
     object-position: center;
   }
   .audio-player {
-    margin-top: 50%;
+    margin-top: -12%;
     margin-bottom: 1%;
     width: 90%;
   }
