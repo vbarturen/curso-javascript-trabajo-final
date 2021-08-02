@@ -9,7 +9,7 @@
 .seccion-prensa{
     margin-left: 150px;
     margin-right: 150px;
-    .seccion-prensa__main{
+    .prensa-main{
         display: grid;
         margin-left: 5%;
         margin-right: 5%;
@@ -18,39 +18,55 @@
         grid-template-columns: 20% 30% 30% 20%;
         grid-template-rows: 33% 33% 34%;
         grid-row-gap: 50px;
-        align-items: center;
     }
-    .seccion-prensa__main__link{
+    .prensa-link{
         width: 100%;
         height: 100%;
     }
-    .seccion-prensa__main__link--telam{
+    .telam{
         grid-column-start: 2; 
         grid-row-start: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-
-    .seccion-prensa__main__link--lavoz{
+    .lavoz{
         grid-column-start: 2;  
         grid-row-start: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    .seccion-prensa__main__link--cba24n{
+    .cba24n{
         grid-column-start: 2;  
         grid-row-start: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    .seccion-prensa__main__link--indiehoy{
+    .indiehoy{
         grid-column-start: 3;  
         grid-row-start: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    .seccion-prensa__main__link--laizquierdadiario{
+    .laizquierdadiario{
         grid-column-start: 3;  
         grid-row-start: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;        
     }
-    .seccion-prensa__main__link--marcha{
+    .marcha{
         grid-column-start: 3;  
         grid-row-start: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    .seccion-prensa__main__link--width{
-        width: 65%;
+    .prensa-link-width{
+        width: 90%;
         &:hover{
             @include escalar;
         }

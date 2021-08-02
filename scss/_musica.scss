@@ -1,8 +1,8 @@
 /*PÁGINA MÚSICA*/
 .section-musica{
-    .section-musica__bloque{
+    .bloque{
         @include encasillado (space-evenly);
-        .section-musica__bloque--iframe-musica{
+        .iframe-musica{
             margin-top: 10%;
             margin-bottom: 10%;
             border: 0; 

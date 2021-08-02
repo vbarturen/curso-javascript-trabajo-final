@@ -20,14 +20,20 @@ section{
 article{
     margin-bottom: 30px;
 }
+/*Logo del menú*/
+.logo-en-menu{
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 30px;
+}
 /*Título Tranki Punki*/
-.titulo--sin-animacion{
+.titulo-sin-animacion{
     width: 250px;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 /*Título Tranki Punki Animado*/
-.container .row .container__row--titulo-animado{
+.container .row .titulo-animado{
     width: 100%;
     padding-top: 1rem;
     padding-bottom: 2rem;
@@ -59,8 +65,9 @@ a.dropdown-item{
 }
     /*PÁGINA BIO*/
 /*Grid*/
-.seccion-integrantes__main{
+.main{
     width: 70%;
+    margin-bottom: 60px;
 }
 /*PÁGINA GALERÍA*/
 .imgGaleria{
@@ -68,10 +75,10 @@ a.dropdown-item{
 }
 /*PÁGINA MÚSICA*/
 .section-musica{
-    .section-musica__bloque{
-        .section-musica__bloque--iframe-musica{
+    .bloque{
+        .iframe-musica{
             margin-top: 5%;
-            margin-bottom: 5%;
+            margin-bottom: 7%;
             border: 0; 
             width: 340px;
             height: 460px;
@@ -81,7 +88,7 @@ a.dropdown-item{
 /*PÁGINA VÍDEOS*/
 .videos{
     @include encasillado(center);
-    .videos__cada-video{
+    .cada-video{
     max-width: 90%;
     padding: 5%, 5%, 5%, 5%;
     }
@@ -95,53 +102,34 @@ a.dropdown-item{
 }
 /*GRID PRENSA*/
 .seccion-prensa{
-    margin-left: 15px;
-    margin-right: 15px;
-    .seccion-prensa__main{
+    margin-left: 0px;
+    margin-right: 0px;
+    .prensa-main{
         grid-row-gap: 25px;
-        align-items: center;
         margin-top: 40px;
-        margin-bottom: 80px;
-        grid-template-columns: 10% 40% 40% 10%;
+        margin-bottom: 90px;
+        grid-template-columns: 5% 45% 45% 5%;
     }
-    .prensa__main__link{
-        width: 100%;
-        height: 100%;
-    }
-    .prensa__main__link--telam{
-        grid-column-start: 1; 
-        grid-row-start: 1;
-    }
-    .prensa__main__link--indiehoy{
-        grid-column-start: 1;  
-        grid-row-start: 2;
-    }
-    .prensa__main__link--laizquierdadiario{
-        grid-column-start: 1;  
-        grid-row-start: 3;
-    }
-    .prensa__main__link--lavoz{
-        grid-column-start: 2;  
-        grid-row-start: 1;
-    }
-    .prensa__main__link--marcha{
-        grid-column-start: 2;  
-        grid-row-start: 2;
-    }
-    .prensa__main__link--cba24n{
-        grid-column-start: 2;  
-        grid-row-start: 3;
-    }
-    .seccion-prensa__main__link--width{
-        width:70%;
+    .prensa-link-width{
+        width:80%;
     }
 }
 /*CONTACTO FORMULARIO*/
 .seccion-contacto{
     margin-left: 5%;
     margin-right: 5%;
-    .seccion-contacto__formulario{
+    .formulario{
         font-size: $textobody;
+        .textarea-width{
+            width: 300px;
+        }
+        .boton-formulario{
+            padding: 5px 32px;
+            margin-top: 10px;
+            text-align: center;
+            font-size: $textobody;
+
+        }
     }
 }
 }

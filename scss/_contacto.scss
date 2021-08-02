@@ -1,13 +1,17 @@
 /*Formulario*/
 .seccion-contacto{
-    .seccion-contacto__formulario{
+    .formulario{
         padding: 9px;
         font-size: 20px;
-        .seccion-contacto__formulario--boton{
+        .textarea-width{
+            width: 750px;
+        }
+        .boton-formulario{
             background-color: $negro;
             color: $fucsia;
             border-color: $fucsia;
             padding: 15px 32px;
+            margin-top: 10px;
             text-align: center;
             font-size: 20px;
             &:hover{

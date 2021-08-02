@@ -48,10 +48,10 @@
                         <a class="nav-link" href="prensa.html">PRENSA</a></li>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         CONTACTO
                         </a>
-                        <ul class="dropdown-menu menuDecoration" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu menuDecoration" aria-labelledby="">
                             <li><a class="dropdown-item" href="contacto.html">FORMULARIO</a></li>
                             <li><a class="dropdown-item" href="https://api.whatsapp.com/send?phone=5493513448676&text=Hola%2C%20quisiera%20contactarme%20con%20la%20representante%20de%20la%20banda." target="_blank">WHATSAPP</a></li>
                         </ul>
@@ -64,7 +64,7 @@
     </header>
     <!-- Título Imagen Responsive -->
     <div class="titulo">
-        <h1><img class="titulo--sin-animacion" src="imagenes/Titulotrankipunki.png" alt="Formulario de contacto de Tranki Punki"></h1>
+        <h1><img class="titulo-sin-animacion" src="imagenes/tranki-punki-titulo.png" alt="Formulario de contacto de Tranki Punki"></h1>
     </div> 
     <!-- Sección de Contacto -->
     <section>
@@ -72,19 +72,19 @@
             <form action="#">
                 <fieldset class="seccion-contacto">
                     <h3>Formulario de contacto</h3>
-                    <div class="seccion-contacto__formulario">
+                    <div class="formulario">
                         <label for="Nombre">Completa con tu nombre: </label>
                         <input type="text" name="Nombre" placeholder="Introduce tu nombre">
                         </div>
-                    <div class="seccion-contacto__formulario">
+                    <div class="formulario">
                         <label for="Apellido">Completa con tu apellido: </label>
                         <input type="text" name="Apellido" placeholder="Introduce tu apellido">
                     </div>
-                    <div class="seccion-contacto__formulario">
+                    <div class="formulario">
                         <label for="email">Completa con tu email: </label>
                         <input type="email" name= "Email" placeholder="Introduce tu email" required>
                     </div>
-                    <div class="seccion-contacto__formulario">
+                    <div class="formulario">
                         <label for="motivo">Motivo de la consulta: </label>
                         <select name="motivo" id="">
                             <option value="Nota de prensa">Nota de prensa</option>
@@ -92,7 +92,7 @@
                             <option value="Otro">Otro</option>
                         </select>
                     </div>
-                    <div class="seccion-contacto__formulario">
+                    <div class="formulario">
                         <label for="genero">Género: </label>
                         <input type="radio" name="genero" value="Mujer"> Mujer
                         <input type="radio" name="genero" value="Hombre"> Hombre
@@ -101,15 +101,15 @@
                         <input type="radio" name="genero" value="Mujer trans"> Mujer trans
                         <input type="radio" name="genero" value="Otrx"> Otrx
                     </div>
-                    <div class="seccion-contacto__formulario">
-                        <textarea name="comentarios" id="" cols="50" rows="10"> Escribí aquí tus comentarios.</textarea>
+                    <div class="formulario">
+                        <textarea class="textarea-width" name="comentarios" id="" cols="45" rows="10"> Escribí aquí tus comentarios.</textarea>
                     </div>
-                    <div class="seccion-contacto__formulario">
+                    <div class="formulario">
                         <label for="mayor">Soy mayor de 18 años.</label>
                         <input type="checkbox" name="mayor">
                     </div>
-                    <div class="seccion-contacto__formulario">
-                        <input class="seccion-contacto__formulario--boton" type="submit" value="ENVIAR">
+                    <div class="formulario">
+                        <input class="boton-formulario" type="submit" value="ENVIAR">
                     </div>
                 </fieldset>
             </form>

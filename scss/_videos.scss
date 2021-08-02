@@ -1,7 +1,7 @@
 /*PÁGINA VÍDEOS*/
 .videos{
     @include encasillado(center);
-    .videos__cada-video{
+    .cada-video{
         padding: 1%;
         &:hover{
         @include escalar;
