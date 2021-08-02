@@ -148,7 +148,7 @@ a.dropdown-item {
   display: grid;
   margin-left: 10%;
   margin-right: 10%;
-  margin-bottom: 15%;
+  margin-bottom: 7%;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 20% 20% 20% 20% 20%;
   grid-gap: 10px;
@@ -489,6 +489,9 @@ footer .texto-derechos {
   }
   /*PÁGINA BIO*/
   /*Grid*/
+  .seccion-integrantes {
+    margin-bottom: 20%;
+  }
   .seccion-integrantes main {
     width: 70%;
   }
@@ -530,10 +533,6 @@ footer .texto-derechos {
   figure.pushup:hover img {
     transform: none;
     opacity: 1;
-  }
-  /*PÁGINA GALERÍA*/
-  .imgGaleria {
-    width: 300px;
   }
   /*PÁGINA MÚSICA*/
   .section-musica .bloque .iframe-musica {
