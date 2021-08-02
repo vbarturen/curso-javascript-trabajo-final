@@ -114,7 +114,7 @@ a.dropdown-item {
 /*Título Tranki Punki Animado*/
 .container .row .titulo-animado {
   width: 70%;
-  margin-top: 23%;
+  margin-top: 20%;
   animation-duration: 8s;
   animation-name: aparecer;
   animation-iteration-count: 1;
@@ -136,14 +136,14 @@ a.dropdown-item {
   top: 110px;
   left: 0;
   width: 100%;
-  height: 71%;
+  height: 70%;
   object-fit: cover;
   object-position: center;
 }
 
 .audio-player {
   margin-top: 16%;
-  margin-bottom: 0%;
+  margin-bottom: 2%;
   width: 100%;
 }
 
@@ -435,7 +435,7 @@ footer .texto-derechos {
 }
 
 /*MOBILE MEDIA QUERY*/
-@media only screen and (max-width: 600px) and (hover: none), only screen and (max-width: 600px) and (-webkit-transform: none), only screen and (max-width: 600px) and (-moz-transform: none), only screen and (max-width: 600px) and (-ms-high-contrast: none) {
+@media only screen and (max-width: 400px) and (hover: none), only screen and (max-width: 400px) and (-webkit-transform: none), only screen and (max-width: 400px) and (-moz-transform: none), only screen and (max-width: 400px) and (-ms-high-contrast: none) {
   body {
     font-size: 0.76923em;
     margin-left: 0;
@@ -474,8 +474,8 @@ footer .texto-derechos {
   /*INDEX*/
   /*Título Tranki Punki Animado*/
   .container .row .titulo-animado {
-    margin-top: -170%;
-    width: 100%;
+    width: 80%;
+    margin-top: -200%;
     animation-duration: 8s;
     animation-name: aparecer;
     animation-iteration-count: 1;
@@ -492,7 +492,7 @@ footer .texto-derechos {
   /*Vídeo y Player de música*/
   .video {
     position: relative;
-    top: 10px;
+    top: -10px;
     left: 0;
     width: 100%;
     height: 400px;
@@ -500,7 +500,7 @@ footer .texto-derechos {
     object-position: center;
   }
   .audio-player {
-    margin-top: -12%;
+    margin-top: -20%;
     margin-bottom: 1%;
     width: 90%;
   }
