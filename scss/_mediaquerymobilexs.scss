@@ -1,0 +1,174 @@
+/*MOBILE MEDIA QUERY*/
+@media only screen and (min-width: 280px){
+    @media (hover:none), (-webkit-transform: none), (-moz-transform: none), (-ms-high-contrast: none) {
+    body{
+        font-size: $textobody/1.3;
+        margin-left: 0;
+    }
+    body h2{
+        font-size: $tituloh2/1.5;
+        margin-bottom: 8%;
+        color: $fucsia;
+    }
+    body h3{
+        font-size: $tituloh3/1.5;
+        margin-bottom: 5%;
+        color: $verde;
+    }
+    section{
+        margin-bottom: 30px;
+    }
+    article{
+        margin-bottom: 30px;
+    }
+    /*Logo del menú*/
+    .logo-en-menu{
+        margin-top: 5px;
+        margin-left: 5px;
+        width: 30px;
+    }
+    /*Título Tranki Punki*/
+    .titulo-sin-animacion{
+        width: 250px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    body{
+        width: 100%;
+    }
+    /*INDEX*/
+    /*Título Tranki Punki Animado*/
+    .container .row .titulo-animado{
+        width: 90%;
+        margin-top: -240%;
+        animation-duration: 8s;
+        animation-name: aparecer;
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+    }
+    @keyframes aparecer {
+        0% {
+            opacity: 0;
+            }
+        100% {
+            opacity: 1;
+            }
+    }
+    /*Vídeo y Player de música*/
+    .video{
+        position: relative;
+        top: -10px;
+        left: 0;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .audio-player{
+        margin-top: -20%;
+        margin-bottom: 1%;
+        width: 90%;
+    }
+    /*Menú*/
+    .dropdown-toggle{
+        margin-bottom: -10px;
+    }
+    a.dropdown-item{
+        color:$fucsia;
+        font-size: 12px;
+        text-align: center;
+        margin-left: auto;
+        margin-bottom: 3px;
+    }
+    /*PÁGINA BIO*/
+    /*Grid*/
+    .seccion-integrantes{
+        margin-bottom: 20%;
+        main{
+            width:70%;
+        }
+    }
+    /*EFECTO PUSHUP BIO GRID*/
+    figure.pushup{
+        figcaption {
+            opacity: 0;
+        }
+        &:hover img {
+            transform: none;
+            opacity: 1;
+        }
+    }
+    /*PÁGINA MÚSICA*/
+    .section-musica{
+        margin-bottom: -10px;
+        .bloque{
+            .iframe-musica{
+                margin-top: 5%;
+                margin-bottom: -15%;
+                border: 0; 
+                width: 260px;
+                height: 460px;
+            }
+        }
+    }
+    /*PÁGINA VÍDEOS*/
+    .videos{
+        margin-bottom: -10px;
+        @include encasillado(center);
+        .cada-video{
+        margin-bottom: -10%;
+        max-width: 90%;
+        padding: 5%, 5%, 5%, 5%;
+        }
+    }
+    /*PÁGINA PRENSA*/
+    .texto-en-bloque{
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: $textobody;
+        text-align: center;
+    }
+    /*GRID PRENSA*/
+    .seccion-prensa{
+        margin-left: 0px;
+        margin-right: 0px;
+        .prensa-main{
+            grid-row-gap: 25px;
+            margin-top: 40px;
+            margin-bottom: 90px;
+            grid-template-columns: 5% 45% 45% 5%;
+        }
+        .prensa-link-width{
+            width:80%;
+        }
+    }
+    /*CONTACTO FORMULARIO*/
+    .seccion-contacto{
+        margin-left: 5%;
+        margin-right: 5%;
+        .formulario{
+            font-size: $textobody;
+            .textarea-width{
+                width: 240px;
+            }
+            .boton-formulario{
+                padding: 5px 32px;
+                margin-top: 10px;
+                text-align: center;
+                font-size: $textobody;
+    
+            }
+        }
+    }
+    /*FOOTER*/
+    footer{
+        color: $verde;
+        font-size: $textofooter;
+        margin-top: -1%;
+        .texto-derechos{
+            color: $fucsia;
+            margin-top: -5%;
+        }
+    }
+    }
+    }

@@ -435,7 +435,177 @@ footer .texto-derechos {
 }
 
 /*MOBILE MEDIA QUERY*/
-@media only screen and (max-width: 400px) and (hover: none), only screen and (max-width: 400px) and (-webkit-transform: none), only screen and (max-width: 400px) and (-moz-transform: none), only screen and (max-width: 400px) and (-ms-high-contrast: none) {
+@media only screen and (min-width: 280px) and (hover: none), only screen and (min-width: 280px) and (-webkit-transform: none), only screen and (min-width: 280px) and (-moz-transform: none), only screen and (min-width: 280px) and (-ms-high-contrast: none) {
+  body {
+    font-size: 0.76923em;
+    margin-left: 0;
+  }
+  body h2 {
+    font-size: 2em;
+    margin-bottom: 8%;
+    color: #f800ff;
+  }
+  body h3 {
+    font-size: 1.33333em;
+    margin-bottom: 5%;
+    color: #00ff94;
+  }
+  section {
+    margin-bottom: 30px;
+  }
+  article {
+    margin-bottom: 30px;
+  }
+  /*Logo del menú*/
+  .logo-en-menu {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 30px;
+  }
+  /*Título Tranki Punki*/
+  .titulo-sin-animacion {
+    width: 250px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  body {
+    width: 100%;
+  }
+  /*INDEX*/
+  /*Título Tranki Punki Animado*/
+  .container .row .titulo-animado {
+    width: 90%;
+    margin-top: -240%;
+    animation-duration: 8s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  }
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /*Vídeo y Player de música*/
+  .video {
+    position: relative;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .audio-player {
+    margin-top: -20%;
+    margin-bottom: 1%;
+    width: 90%;
+  }
+  /*Menú*/
+  .dropdown-toggle {
+    margin-bottom: -10px;
+  }
+  a.dropdown-item {
+    color: #f800ff;
+    font-size: 12px;
+    text-align: center;
+    margin-left: auto;
+    margin-bottom: 3px;
+  }
+  /*PÁGINA BIO*/
+  /*Grid*/
+  .seccion-integrantes {
+    margin-bottom: 20%;
+  }
+  .seccion-integrantes main {
+    width: 70%;
+  }
+  /*EFECTO PUSHUP BIO GRID*/
+  figure.pushup figcaption {
+    opacity: 0;
+  }
+  figure.pushup:hover img {
+    transform: none;
+    opacity: 1;
+  }
+  /*PÁGINA MÚSICA*/
+  .section-musica {
+    margin-bottom: -10px;
+  }
+  .section-musica .bloque .iframe-musica {
+    margin-top: 5%;
+    margin-bottom: -15%;
+    border: 0;
+    width: 260px;
+    height: 460px;
+  }
+  /*PÁGINA VÍDEOS*/
+  .videos {
+    margin-bottom: -10px;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+  }
+  .videos .cada-video {
+    margin-bottom: -10%;
+    max-width: 90%;
+    padding: 5%, 5%, 5%, 5%;
+  }
+  /*PÁGINA PRENSA*/
+  .texto-en-bloque {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1em;
+    text-align: center;
+  }
+  /*GRID PRENSA*/
+  .seccion-prensa {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .seccion-prensa .prensa-main {
+    grid-row-gap: 25px;
+    margin-top: 40px;
+    margin-bottom: 90px;
+    grid-template-columns: 5% 45% 45% 5%;
+  }
+  .seccion-prensa .prensa-link-width {
+    width: 80%;
+  }
+  /*CONTACTO FORMULARIO*/
+  .seccion-contacto {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .seccion-contacto .formulario {
+    font-size: 1em;
+  }
+  .seccion-contacto .formulario .textarea-width {
+    width: 240px;
+  }
+  .seccion-contacto .formulario .boton-formulario {
+    padding: 5px 32px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1em;
+  }
+  /*FOOTER*/
+  footer {
+    color: #00ff94;
+    font-size: 1em;
+    margin-top: -1%;
+  }
+  footer .texto-derechos {
+    color: #f800ff;
+    margin-top: -5%;
+  }
+}
+
+/*MOBILE MEDIA QUERY*/
+@media only screen and (min-width: 359px) and (hover: none), only screen and (min-width: 359px) and (-webkit-transform: none), only screen and (min-width: 359px) and (-moz-transform: none), only screen and (min-width: 359px) and (-ms-high-contrast: none) {
   body {
     font-size: 0.76923em;
     margin-left: 0;
@@ -579,7 +749,7 @@ footer .texto-derechos {
     font-size: 1em;
   }
   .seccion-contacto .formulario .textarea-width {
-    width: 300px;
+    width: 270px;
   }
   .seccion-contacto .formulario .boton-formulario {
     padding: 5px 32px;
@@ -602,16 +772,16 @@ footer .texto-derechos {
 /*MOBILE XL MEDIA QUERY*/
 @media only screen and (min-width: 410px) and (hover: none), only screen and (min-width: 410px) and (-webkit-transform: none), only screen and (min-width: 410px) and (-moz-transform: none), only screen and (min-width: 410px) and (-ms-high-contrast: none) {
   body {
-    font-size: 0.90909em;
+    font-size: 1em;
     margin-left: 0;
   }
   body h2 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin-bottom: 6%;
     color: #f800ff;
   }
   body h3 {
-    font-size: 1.66667em;
+    font-size: 2em;
     margin-bottom: 5%;
     color: #00ff94;
   }
@@ -697,9 +867,6 @@ footer .texto-derechos {
     opacity: 1;
   }
   /*PÁGINA MÚSICA*/
-  .section-musica {
-    margin-bottom: -20px;
-  }
   .section-musica .bloque .iframe-musica {
     margin-top: 5%;
     margin-bottom: 7%;
@@ -766,6 +933,446 @@ footer .texto-derechos {
     color: #f800ff;
     margin-top: -3%;
     margin-bottom: 10%;
+  }
+}
+
+/*TABLET MEDIA QUERY*/
+@media only screen and (min-width: 640px) and (hover: none), only screen and (min-width: 640px) and (-webkit-transform: none), only screen and (min-width: 640px) and (-moz-transform: none), only screen and (min-width: 640px) and (-ms-high-contrast: none) {
+  body {
+    font-size: 0.90909em;
+    margin-left: 0;
+  }
+  body h2 {
+    font-size: 2.5em;
+    margin-bottom: 6%;
+    color: #f800ff;
+  }
+  body h3 {
+    font-size: 1.66667em;
+    margin-bottom: 5%;
+    color: #00ff94;
+  }
+  section {
+    margin-bottom: 30px;
+  }
+  article {
+    margin-bottom: 30px;
+  }
+  /*Logo del menú*/
+  .logo-en-menu {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 35px;
+  }
+  /*Título Tranki Punki*/
+  .titulo-sin-animacion {
+    width: 300px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  body {
+    width: 100%;
+  }
+  /*PÁGINA INDEX*/
+  /*Título Tranki Punki Animado*/
+  .container .row .titulo-animado {
+    width: 90%;
+    margin-top: -160%;
+    animation-duration: 8s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  }
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /*Vídeo y Player de música*/
+  .video {
+    position: relative;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 740px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .audio-player {
+    margin-top: -20%;
+    margin-bottom: 1%;
+    width: 90%;
+  }
+  /*Menú*/
+  .dropdown-toggle {
+    margin-bottom: -10px;
+  }
+  a.dropdown-item {
+    color: #f800ff;
+    font-size: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-bottom: 3px;
+  }
+  /*PÁGINA BIO*/
+  /*Grid*/
+  .seccion-integrantes {
+    margin-bottom: 10%;
+  }
+  .seccion-integrantes main {
+    width: 75%;
+  }
+  /*EFECTO PUSHUP BIO GRID*/
+  figure.pushup figcaption {
+    opacity: 0;
+  }
+  figure.pushup:hover img {
+    transform: none;
+    opacity: 1;
+  }
+  /*PÁGINA MÚSICA*/
+  .section-musica {
+    margin-bottom: -20px;
+  }
+  .section-musica .bloque .iframe-musica {
+    margin-top: 5%;
+    margin-bottom: 7%;
+    border: 0;
+    width: 340px;
+    height: 460px;
+  }
+  /*PÁGINA VÍDEOS*/
+  .videos {
+    margin-bottom: 15px;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+  }
+  .videos .cada-video {
+    margin-bottom: 15px;
+    max-width: 90%;
+    padding: 5%, 5%, 5%, 5%;
+  }
+  /*PÁGINA PRENSA*/
+  .texto-en-bloque {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1em;
+    text-align: center;
+  }
+  /*GRID PRENSA*/
+  .seccion-prensa {
+    margin-bottom: 160px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .seccion-prensa .prensa-main {
+    grid-row-gap: 50px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    grid-template-columns: 5% 45% 45% 5%;
+  }
+  .seccion-prensa .prensa-link-width {
+    width: 70%;
+  }
+  /*CONTACTO FORMULARIO*/
+  .seccion-contacto {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .seccion-contacto .formulario {
+    font-size: 1em;
+  }
+  .seccion-contacto .formulario .textarea-width {
+    width: 600px;
+  }
+  .seccion-contacto .formulario .boton-formulario {
+    padding: 5px 32px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1em;
+  }
+  /*FOOTER*/
+  footer {
+    color: #00ff94;
+    font-size: 1em;
+    margin-top: 0%;
+  }
+  footer .texto-derechos {
+    color: #f800ff;
+    margin-top: -1%;
+    margin-bottom: 3%;
+  }
+}
+
+/*NOTEBOOK MEDIA QUERY*/
+@media only screen and (min-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  body {
+    font-size: 1.1em;
+    margin-left: 0;
+  }
+  body h2 {
+    font-size: 3em;
+    margin-bottom: 4%;
+    color: #f800ff;
+  }
+  body h3 {
+    font-size: 2em;
+    margin-bottom: 5%;
+    color: #00ff94;
+  }
+  section {
+    margin-bottom: 30px;
+  }
+  article {
+    margin-bottom: 60px;
+  }
+  /*Logo del menú*/
+  .logo-en-menu {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 45px;
+  }
+  /*Título Tranki Punki*/
+  .titulo-sin-animacion {
+    width: 600px;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+  body {
+    width: 100%;
+  }
+  /*PÁGINA INDEX*/
+  /*Título Tranki Punki Animado*/
+  .container .row .titulo-animado {
+    width: 90%;
+    margin-top: -90%;
+    animation-duration: 8s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  }
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /*Vídeo y Player de música*/
+  .video {
+    position: relative;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 740px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .audio-player {
+    margin-top: -20%;
+    margin-bottom: 1%;
+    width: 90%;
+  }
+  /*Menú*/
+  .dropdown-toggle {
+    margin-bottom: -10px;
+  }
+  a.dropdown-item {
+    color: #f800ff;
+    font-size: 18px;
+    text-align: right;
+    margin-left: -20px;
+    margin-bottom: 3px;
+  }
+  /*PÁGINA BIO*/
+  /*Grid*/
+  .seccion-integrantes {
+    margin-bottom: 10%;
+  }
+  .seccion-integrantes main {
+    width: 75%;
+  }
+  .seccion-integrantes figure.pushup img {
+    transform: translate3d(0, 0, 0);
+    transition: all 0.5s;
+  }
+  .seccion-integrantes figure.pushup figcaption {
+    top: 100%;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  .seccion-integrantes figure.pushup:hover img {
+    /* move image up vertically a bit for parallax effect */
+    transform: translate3d(0, -20px, 0);
+    opacity: .5;
+  }
+  .seccion-integrantes figure.pushup:hover figcaption {
+    /* move caption up vertically to fully reveal caption */
+    transform: translate3d(0, -100%, 0);
+    transition: all 0.5s;
+  }
+  /*PÁGINA MÚSICA*/
+  .section-musica .bloque {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-evenly;
+  }
+  .section-musica .bloque .iframe-musica {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border: 0;
+    width: 500px;
+    height: 620px;
+  }
+  .section-musica .bloque .iframe-musica:hover {
+    transform: scale(1.1, 1.1);
+  }
+  /*PÁGINA VÍDEOS*/
+  .videos {
+    margin-bottom: 15px;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+  }
+  .videos .cada-video {
+    max-width: 90%;
+    padding: 5%, 5%, 5%, 5%;
+  }
+  /*PÁGINA PRENSA*/
+  .texto-en-bloque {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1em;
+    text-align: center;
+  }
+  /*GRID PRENSA*/
+  .seccion-prensa {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  .seccion-prensa .prensa-main {
+    display: grid;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 12%;
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-rows: 33% 33% 34%;
+    grid-row-gap: 50px;
+  }
+  .seccion-prensa .prensa-link {
+    width: 90%;
+    height: 100%;
+  }
+  .seccion-prensa .telam {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .seccion-prensa .lavoz {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .seccion-prensa .cba24n {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .seccion-prensa .indiehoy {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .seccion-prensa .laizquierdadiario {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .seccion-prensa .marcha {
+    grid-column-start: 3;
+    grid-row-start: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .seccion-prensa .prensa-link-width {
+    width: 90%;
+  }
+  .seccion-prensa .prensa-link-width:hover {
+    transform: scale(1.1, 1.1);
+  }
+  /*CONTACTO FORMULARIO*/
+  .seccion-contacto {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .seccion-contacto .formulario {
+    font-size: 1em;
+  }
+  .seccion-contacto .formulario .textarea-width {
+    width: 700px;
+  }
+  .seccion-contacto .formulario .boton-formulario {
+    padding: 5px 32px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1em;
+  }
+  /*FOOTER*/
+  footer {
+    color: #00ff94;
+    font-size: 1em;
+    margin-top: 0%;
+  }
+  footer .texto-derechos {
+    color: #f800ff;
+    margin-top: -1%;
+    margin-bottom: 3%;
+  }
+}
+
+/*TABLET MEDIA QUERY LANDSCAPE*/
+@media only screen and (min-width: 640px) and (max-width: 1024px) and (orientation: landscape) and (hover: none), only screen and (min-width: 640px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-transform: none), only screen and (min-width: 640px) and (max-width: 1024px) and (orientation: landscape) and (-moz-transform: none), only screen and (min-width: 640px) and (max-width: 1024px) and (orientation: landscape) and (-ms-high-contrast: none) {
+  a.dropdown-item {
+    color: #f800ff;
+    font-size: 15px;
+    text-align: right;
+    margin-left: -55px;
+    margin-bottom: 3px;
+  }
+  /*PÁGINA INDEX*/
+  /*Título Tranki Punki Animado*/
+  .container .row .titulo-animado {
+    width: 90%;
+    margin-top: -130%;
+    animation-duration: 8s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  }
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
 /*# sourceMappingURL=estilos.css.map */

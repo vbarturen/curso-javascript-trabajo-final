@@ -1,0 +1,30 @@
+/*TABLET MEDIA QUERY LANDSCAPE*/
+@media only screen and (min-width: 640px) and (max-width: 1024px) and (orientation: landscape) {
+    @media (hover:none), (-webkit-transform: none), (-moz-transform: none), (-ms-high-contrast: none) {
+        a.dropdown-item{
+            color:$fucsia;
+            font-size: 15px;
+            text-align: right;
+            margin-left: -55px;
+            margin-bottom: 3px;
+        }
+        /*PÁGINA INDEX*/
+        /*Título Tranki Punki Animado*/
+        .container .row .titulo-animado{
+            width: 90%;
+            margin-top: -130%;
+            animation-duration: 8s;
+            animation-name: aparecer;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+        }
+        @keyframes aparecer {
+            0% {
+                opacity: 0;
+                }
+            100% {
+                opacity: 1;
+                }
+        }
+}
+}
