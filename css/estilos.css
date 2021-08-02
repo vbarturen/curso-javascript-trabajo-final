@@ -457,7 +457,7 @@ footer .texto-derechos {
 }
 
 /*MOBILE MEDIA QUERY*/
-@media only screen and (min-width: 280px) and (hover: none), only screen and (min-width: 280px) and (-webkit-transform: none), only screen and (min-width: 280px) and (-moz-transform: none), only screen and (min-width: 280px) and (-ms-high-contrast: none) {
+@media only screen and (max-width: 350px) and (hover: none), only screen and (max-width: 350px) and (-webkit-transform: none), only screen and (max-width: 350px) and (-moz-transform: none), only screen and (max-width: 350px) and (-ms-high-contrast: none) {
   body {
     font-size: 0.76923em;
     margin-left: 0;
@@ -738,6 +738,7 @@ footer .texto-derechos {
     justify-content: center;
   }
   .videos .cada-video {
+    margin-bottom: 40px;
     max-width: 90%;
     padding: 5%, 5%, 5%, 5%;
   }

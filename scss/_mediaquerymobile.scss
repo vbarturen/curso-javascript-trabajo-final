@@ -114,6 +114,7 @@
     .videos{
         @include encasillado(center);
         .cada-video{
+        margin-bottom: 40px;
         max-width: 90%;
         padding: 5%, 5%, 5%, 5%;
         }

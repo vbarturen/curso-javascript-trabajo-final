@@ -1,5 +1,5 @@
 /*MOBILE MEDIA QUERY*/
-@media only screen and (min-width: 280px){
+@media only screen and (max-width: 350px){
     @media (hover:none), (-webkit-transform: none), (-moz-transform: none), (-ms-high-contrast: none) {
     body{
         font-size: $textobody/1.3;
