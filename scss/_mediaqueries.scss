@@ -33,14 +33,18 @@ article{
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+body{
+    width: 100%;
+}
+/*INDEX*/
 /*Título Tranki Punki Animado*/
 .container .row .titulo-animado{
     width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding-top: 35%;
     animation-duration: 8s;
     animation-name: aparecer;
     animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 @keyframes aparecer {
     0% {
@@ -50,8 +54,20 @@ article{
         opacity: 1;
         }
 }
-body{
+/*Vídeo y Player de música*/
+.video{
+    position: absolute;
+    top: 80px;
+    left: 0;
     width: 100%;
+    height: 60%;
+    object-fit: cover;
+    object-position: center;
+}
+.audio-player{
+    margin-top: 50%;
+    margin-bottom: 1%;
+    width: 90%;
 }
 /*Menú*/
 .dropdown-toggle{
@@ -174,6 +190,16 @@ figure.pushup{
             font-size: $textobody;
 
         }
+    }
+}
+/*FOOTER*/
+footer{
+    color: $verde;
+    font-size: $textofooter;
+    margin-top: -1%;
+    .texto-derechos{
+        color: $fucsia;
+        margin-top: -5%;
     }
 }
 }

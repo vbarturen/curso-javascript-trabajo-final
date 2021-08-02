@@ -111,10 +111,11 @@ a.dropdown-item {
 /*Título Tranki Punki Animado*/
 .container .row .titulo-animado {
   width: 70%;
-  margin-top: 5%;
+  margin-top: 23%;
   animation-duration: 8s;
   animation-name: aparecer;
   animation-iteration-count: 1;
+  animation-fill-mode: both;
 }
 
 @keyframes aparecer {
@@ -128,11 +129,19 @@ a.dropdown-item {
 
 /*Vídeo y Player de música*/
 .video {
+  position: absolute;
+  top: 110px;
+  left: 0;
   width: 100%;
+  height: 75%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .audio-player {
-  width: 100%;
+  margin-top: 16%;
+  margin-bottom: 2%;
+  width: 98%;
 }
 
 /*PÁGINA BIO*/
@@ -456,14 +465,18 @@ footer .texto-derechos {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+  body {
+    width: 100%;
+  }
+  /*INDEX*/
   /*Título Tranki Punki Animado*/
   .container .row .titulo-animado {
     width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding-top: 35%;
     animation-duration: 8s;
     animation-name: aparecer;
     animation-iteration-count: 1;
+    animation-fill-mode: both;
   }
   @keyframes aparecer {
     0% {
@@ -473,8 +486,20 @@ footer .texto-derechos {
       opacity: 1;
     }
   }
-  body {
+  /*Vídeo y Player de música*/
+  .video {
+    position: absolute;
+    top: 80px;
+    left: 0;
     width: 100%;
+    height: 60%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .audio-player {
+    margin-top: 50%;
+    margin-bottom: 1%;
+    width: 90%;
   }
   /*Menú*/
   .dropdown-toggle {
@@ -589,6 +614,16 @@ footer .texto-derechos {
     margin-top: 10px;
     text-align: center;
     font-size: 1em;
+  }
+  /*FOOTER*/
+  footer {
+    color: #00ff94;
+    font-size: 1em;
+    margin-top: -1%;
+  }
+  footer .texto-derechos {
+    color: #f800ff;
+    margin-top: -5%;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
