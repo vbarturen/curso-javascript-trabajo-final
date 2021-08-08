@@ -10,4 +10,18 @@ footer{
     .texto-derechos{
         color: $fucsia;
     }
+    .footer-del-index{
+        position: absolute;
+        bottom: -120px;
+        left: 0;
+        z-index:0;
+        width: 99%;
+    }
+    .footer-paginas{
+        position: absolute;
+        bottom: -100px;
+        left: 0;
+        z-index:0;
+        width: 99%;
+    }
 }

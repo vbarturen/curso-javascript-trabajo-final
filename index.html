@@ -62,32 +62,42 @@
             <hr>
         </nav>
     </header>
-    <!-- Título Imagen Responsive -->
-    <video class="video" autoplay muted loop>  
-        <source src="multimedia/tranki-punki-video-index.mp4" type="video/mp4" alt="video loop Tranki Punki tocando en vivo"> 
-    </video>
-    <main class="container">
+    <main class= "container-fluid">
         <div class="row">
-            <div class="col-1">
+            <div class="col-12">
+                <video class="video" autoplay muted loop>  
+                    <source src="multimedia/tranki-punki-video-index.mp4" type="video/mp4" alt="video loop Tranki Punki tocando en vivo"> 
+                </video>
             </div>
-            <div class="col-10">
-                <h1><img class="img-fluid titulo-animado" src="imagenes/tranki-punki-titulo.png" alt="Tranki Punki - Inicio"></h1>
+        </div>
+        <!-- Video Fondo -->
+        <div class="contenedor-del-titulo-animado">
+            <div class="row">
+                <div class="col-12">
+                    <h1><img class="titulo-animado" src="imagenes/tranki-punki-titulo.svg" alt="Tranki Punki - Inicio"></h1>
+                </div>
             </div>
-            <div class="col-1">
+        </div>
+        <!-- Player Audio -->
+        <div>
+            <div class="row">
+                <div class="col-12">
+                    <audio controls class="audio-player">
+                        <source src="multimedia/tranki-punki-cancion-fuego-index.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
             </div>
         </div>
     </main>
-    <!-- Player Audio -->
-    <audio controls class="audio-player">
-        <source src="multimedia/tranki-punki-cancion-fuego-index.mp3" type="audio/mpeg">
-    </audio>
     <!-- Pie de página -->
-    <hr> 
     <footer>
-        <p>Copyright © 2021 <strong>Tranki Punki</strong></p>
-        <p class="texto-derechos"><em>Todos los derechos reservados</em></p>
+        <div class="footer-del-index">
+            <hr> 
+            <p>Copyright © 2021 <strong>Tranki Punki</strong></p>
+            <p class="texto-derechos"><em>Todos los derechos reservados</em></p>
+        </div>
     </footer>
-
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>

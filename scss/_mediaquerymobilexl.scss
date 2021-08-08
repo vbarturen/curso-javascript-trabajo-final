@@ -26,6 +26,10 @@
             margin-top: 5px;
             margin-left: 5px;
             width: 35px;
+            &:hover{
+                animation: none;
+                transform: none;
+            }
         }
         /*Título Tranki Punki*/
         .titulo-sin-animacion{
@@ -35,39 +39,6 @@
         }
         body{
             width: 100%;
-        }
-        /*INDEX*/
-        /*Título Tranki Punki Animado*/
-        .container .row .titulo-animado{
-            width: 90%;
-            margin-top: -180%;
-            animation-duration: 8s;
-            animation-name: aparecer;
-            animation-iteration-count: 1;
-            animation-fill-mode: both;
-        }
-        @keyframes aparecer {
-            0% {
-                opacity: 0;
-                }
-            100% {
-                opacity: 1;
-                }
-        }
-        /*Vídeo y Player de música*/
-        .video{
-            position: relative;
-            top: -10px;
-            left: 0;
-            width: 100%;
-            height: 460px;
-            object-fit: cover;
-            object-position: center;
-        }
-        .audio-player{
-            margin-top: -20%;
-            margin-bottom: 1%;
-            width: 90%;
         }
         /*Menú*/
         .dropdown-toggle{
