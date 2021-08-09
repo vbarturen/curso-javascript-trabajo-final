@@ -1,9 +1,11 @@
 $fontsizes:(
+    tituloh1:2em,
     tituloh2: 3em,
     tituloh3: 2em,
     textobody: 1em,
-    textofooter: 1em,
+    textofooter: 1em/1.2,
 );
+$tituloh1: map-get($fontsizes, tituloh1);
 $tituloh2: map-get($fontsizes, tituloh2);
 $tituloh3: map-get($fontsizes, tituloh3);
 $textobody: map-get($fontsizes, textobody);

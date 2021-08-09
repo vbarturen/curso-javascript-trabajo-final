@@ -24,6 +24,13 @@ body .contenido-del-sitio {
   flex: 1;
 }
 
+body h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  color: #f800ff;
+  font-size: 2em;
+}
+
 body h2 {
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
@@ -158,6 +165,7 @@ a.dropdown-item {
   height: 98vh;
   object-fit: cover;
   object-position: center;
+  opacity: 1;
   z-index: -1;
 }
 
@@ -478,21 +486,38 @@ hr {
   border: none;
 }
 
-footer {
-  color: #00ff94;
-  font-size: 1em;
+footer .color-blanco {
+  font-size: 0.83333em;
+  color: white;
 }
 
-footer .texto-derechos {
+footer .color-blanco .color-fucsia {
+  font-size: 1.08333em;
   color: #f800ff;
+  font-weight: bold;
+  text-decoration-line: none;
+}
+
+footer .color-blanco .color-fucsia:hover {
+  color: #00ff94;
+}
+
+footer .color-verde {
+  font-size: 0.83333em;
+  color: #00ff94;
 }
 
 footer .footer-del-index {
   position: absolute;
-  bottom: -120px;
+  bottom: -350px;
   left: 0;
   z-index: 0;
   width: 99%;
+}
+
+footer .footer-del-index h1 {
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 footer .footer-paginas {
@@ -503,8 +528,444 @@ footer .footer-paginas {
   width: 99%;
 }
 
+footer .nav-del-footer .nav-del-footer-main {
+  display: grid;
+  margin-left: 13%;
+  margin-right: 16%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  grid-template-columns: 30% 5% 4% 6% 6% 6% 7% 7% 29%;
+  grid-template-rows: 100%;
+  grid-row-gap: 50px;
+}
+
+footer .nav-del-footer .inicio-li {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .nav-del-footer .bio-li {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .nav-del-footer .musica-li {
+  grid-column-start: 4;
+  grid-row-start: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .nav-del-footer .videos-li {
+  grid-column-start: 5;
+  grid-row-start: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .nav-del-footer .galeria-li {
+  grid-column-start: 6;
+  grid-row-start: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .nav-del-footer .prensa-li {
+  grid-column-start: 7;
+  grid-row-start: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .nav-del-footer .contacto-li {
+  grid-column-start: 8;
+  grid-row-start: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .nav-del-footer .footer-nav-link {
+  font-size: 0.83333em;
+  color: gray;
+  text-decoration-line: none;
+}
+
+footer .nav-del-footer .footer-nav-link:hover {
+  color: #f800ff;
+}
+
+footer .rrss {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+footer .rrss .rrss-main {
+  display: grid;
+  grid-template-columns: 17% 17% 16% 16% 17% 17%;
+  grid-template-rows: 0;
+  grid-row-gap: 0px;
+}
+
+footer .rrss .rrss-link {
+  width: 100%;
+  height: 100%;
+}
+
+footer .rrss .instagram {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .rrss .facebook {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .rrss .youtube {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .rrss .twitter {
+  grid-column-start: 4;
+  grid-row-start: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .rrss .spotify {
+  grid-column-start: 5;
+  grid-row-start: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .rrss .whatsapp {
+  grid-column-start: 6;
+  grid-row-start: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .rrss .rrss-width {
+  width: 60%;
+}
+
+footer .rrss .rrss-width:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+/*MOBILE XL MEDIA QUERY*/
+@media only screen and (min-width: 375px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  /*Estilos generales*/
+  body {
+    font-size: 1em;
+    margin-left: 0;
+  }
+  body h2 {
+    font-size: 3em;
+    margin-bottom: 6%;
+    color: #f800ff;
+  }
+  body h3 {
+    font-size: 2em;
+    margin-bottom: 5%;
+    color: #00ff94;
+  }
+  section {
+    margin-bottom: 30px;
+  }
+  article {
+    margin-bottom: 30px;
+  }
+  /*Logo del menú*/
+  .logo-en-menu {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 35px;
+  }
+  .logo-en-menu:hover {
+    animation: none;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    opacity: 1;
+    transition: none;
+  }
+  /*Título Tranki Punki*/
+  .titulo-sin-animacion {
+    width: 300px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  body {
+    width: 100%;
+  }
+  /*Menú*/
+  .dropdown-toggle {
+    margin-bottom: -10px;
+  }
+  a.dropdown-item {
+    color: #f800ff;
+    font-size: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-bottom: 3px;
+  }
+  /*PÁGINA BIO*/
+  /*Grid*/
+  .seccion-integrantes {
+    margin-bottom: 20%;
+  }
+  .seccion-integrantes main {
+    width: 70%;
+  }
+  /*EFECTO PUSHUP BIO GRID*/
+  figure.pushup:hover {
+    animation: none;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    opacity: 1;
+    transition: none;
+  }
+  figure.pushup figcaption:hover {
+    animation: none;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    opacity: 1;
+    transition: none;
+  }
+  /*PÁGINA MÚSICA*/
+  .section-musica .bloque .iframe-musica {
+    margin-top: 5%;
+    margin-bottom: 7%;
+    border: 0;
+    width: 340px;
+    height: 460px;
+  }
+  /*PÁGINA VÍDEOS*/
+  .videos {
+    margin-bottom: -20px;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+  }
+  .videos .cada-video {
+    max-width: 90%;
+    padding: 5%, 5%, 5%, 5%;
+  }
+  /*PÁGINA PRENSA*/
+  .texto-en-bloque {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1em;
+    text-align: center;
+  }
+  /*GRID PRENSA*/
+  .seccion-prensa {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .seccion-prensa .prensa-main {
+    grid-row-gap: 25px;
+    margin-top: 40px;
+    margin-bottom: 90px;
+    grid-template-columns: 5% 45% 45% 5%;
+  }
+  .seccion-prensa .prensa-link-width {
+    width: 80%;
+  }
+  /*CONTACTO FORMULARIO*/
+  .seccion-contacto {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .seccion-contacto .formulario {
+    font-size: 1em;
+  }
+  .seccion-contacto .formulario .textarea-width {
+    width: 340px;
+  }
+  .seccion-contacto .formulario .boton-formulario {
+    padding: 5px 32px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1em;
+  }
+  /*FOOTER*/
+  footer .footer-del-index {
+    margin-bottom: 50px;
+  }
+  footer .footer-del-index h1 {
+    font-size: 1.81818em;
+  }
+  footer .footer-del-index .color-verde {
+    font-size: 0.83333em;
+    color: #00ff94;
+    margin-bottom: 5px;
+  }
+  footer .footer-del-index .color-fucsia {
+    font-size: 0.83333em;
+    color: #f800ff;
+    font-weight: bold;
+    text-decoration-line: none;
+  }
+  footer .footer-del-index .color-fucsia:hover {
+    color: #f800ff;
+  }
+  footer .footer-del-index .color-blanco {
+    font-size: 0.83333em;
+    color: white;
+  }
+  footer .footer-del-index .footer-del-index {
+    position: absolute;
+    bottom: -350px;
+    left: 0;
+    z-index: 0;
+    width: 99%;
+  }
+  footer .footer-del-index .footer-del-index h1 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  footer .footer-del-index .footer-paginas {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    z-index: 0;
+    width: 99%;
+  }
+  footer .footer-del-index .nav-del-footer .nav-del-footer-main {
+    display: grid;
+    margin-left: 8%;
+    margin-right: 12%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    grid-template-columns: 5% 20% 15% 30% 20% 5%;
+    grid-template-rows: 50% 50%;
+    grid-row-gap: 5px;
+  }
+  footer .footer-del-index .nav-del-footer .inicio-li {
+    display: grid;
+    align-self: center;
+    justify-content: flex-start;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  footer .footer-del-index .nav-del-footer .bio-li {
+    display: grid;
+    align-self: center;
+    grid-column: 3;
+    grid-row: 1;
+  }
+  footer .footer-del-index .nav-del-footer .musica-li {
+    display: grid;
+    align-self: center;
+    grid-column: 4;
+    grid-row: 1;
+  }
+  footer .footer-del-index .nav-del-footer .videos-li {
+    display: grid;
+    align-self: center;
+    justify-content: flex-end;
+    grid-column: 5;
+    grid-row: 1;
+  }
+  footer .footer-del-index .nav-del-footer .galeria-li {
+    display: grid;
+    align-self: center;
+    justify-content: flex-start;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  footer .footer-del-index .nav-del-footer .prensa-li {
+    display: grid;
+    align-self: center;
+    grid-row: 2;
+    grid-column: 3 / 5;
+  }
+  footer .footer-del-index .nav-del-footer .contacto-li {
+    display: grid;
+    align-self: center;
+    justify-content: flex-end;
+    grid-column: 5;
+    grid-row: 2;
+  }
+  footer .footer-del-index .nav-del-footer a.footer-nav-link {
+    font-size: 11px;
+    color: gray;
+    text-decoration-line: none;
+  }
+  footer .footer-del-index .nav-del-footer a.footer-nav-link:hover {
+    color: gray;
+  }
+  footer .footer-del-index .rrss {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  footer .footer-del-index .rrss .rrss-width {
+    width: 60%;
+  }
+  footer .footer-del-index .rrss .rrss-width:hover {
+    animation: none;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    opacity: 1;
+    transition: none;
+  }
+}
+
 /*MOBILE MEDIA QUERY*/
-@media only screen and (min-width: 280px) and (hover: none), only screen and (min-width: 280px) and (-webkit-transform: none), only screen and (min-width: 280px) and (-moz-transform: none), only screen and (min-width: 280px) and (-ms-high-contrast: none) {
+@media only screen and (min-width: 280px) and (orientation: portrait) {
+  /*Estilos generales*/
   body {
     font-size: 0.76923em;
     margin-left: 0;
@@ -555,6 +1016,11 @@ footer .footer-paginas {
     margin-left: auto;
     margin-bottom: 3px;
   }
+  /*PÁGINA INDEX*/
+  /*Video background*/
+  .container-fluid .video {
+    opacity: 0.5;
+  }
   /*PÁGINA BIO*/
   /*Grid*/
   .seccion-integrantes {
@@ -564,12 +1030,21 @@ footer .footer-paginas {
     width: 70%;
   }
   /*EFECTO PUSHUP BIO GRID*/
-  figure.pushup figcaption {
-    opacity: 0;
-  }
-  figure.pushup:hover img {
+  figure.pushup:hover {
+    animation: none;
     transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
     opacity: 1;
+    transition: none;
+  }
+  figure.pushup figcaption:hover {
+    animation: none;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    opacity: 1;
+    transition: none;
   }
   /*PÁGINA MÚSICA*/
   .section-musica {
@@ -632,20 +1107,131 @@ footer .footer-paginas {
     text-align: center;
     font-size: 1em;
   }
-  /*FOOTER*/
-  footer {
-    color: #00ff94;
-    font-size: 1em;
-    margin-top: -1%;
+  footer h1 {
+    font-size: 1.25em;
   }
-  footer .texto-derechos {
+  footer .color-verde {
+    font-size: 0.75758em;
+    color: #00ff94;
+    margin-bottom: 5px;
+  }
+  footer .footer-del-index {
+    position: absolute;
+    bottom: -250px;
+    left: 0;
+    z-index: 0;
+    width: 99%;
+  }
+  footer .footer-del-index h1 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  footer .footer-paginas {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    z-index: 0;
+    width: 99%;
+  }
+  footer .color-fucsia {
+    font-size: 0.75758em;
     color: #f800ff;
-    margin-top: -5%;
+    font-weight: bold;
+    text-decoration-line: none;
+  }
+  footer .color-fucsia:hover {
+    color: #f800ff;
+  }
+  footer .color-blanco {
+    font-size: 0.75758em;
+    color: white;
+  }
+  footer .nav-del-footer .nav-del-footer-main {
+    display: grid;
+    margin-left: 2%;
+    margin-right: 8%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    grid-template-columns: 5% 20% 15% 30% 20% 5%;
+    grid-template-rows: 50% 50%;
+    grid-row-gap: 5px;
+  }
+  footer .nav-del-footer .inicio-li {
+    display: grid;
+    align-self: center;
+    justify-content: flex-start;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  footer .nav-del-footer .bio-li {
+    display: grid;
+    align-self: center;
+    grid-column: 3;
+    grid-row: 1;
+  }
+  footer .nav-del-footer .musica-li {
+    display: grid;
+    align-self: center;
+    grid-column: 4;
+    grid-row: 1;
+  }
+  footer .nav-del-footer .videos-li {
+    display: grid;
+    align-self: center;
+    justify-content: flex-end;
+    grid-column: 5;
+    grid-row: 1;
+  }
+  footer .nav-del-footer .galeria-li {
+    display: grid;
+    align-self: center;
+    justify-content: flex-start;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  footer .nav-del-footer .prensa-li {
+    display: grid;
+    align-self: center;
+    grid-row: 2;
+    grid-column: 3 / 5;
+  }
+  footer .nav-del-footer .contacto-li {
+    display: grid;
+    align-self: center;
+    justify-content: flex-end;
+    grid-column: 5;
+    grid-row: 2;
+  }
+  footer .nav-del-footer .footer-nav-link {
+    font-size: 9px;
+    color: gray;
+    text-decoration-line: none;
+  }
+  footer .nav-del-footer .footer-nav-link:hover {
+    color: gray;
+  }
+  footer .rrss {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  footer .rrss .rrss-width {
+    width: 60%;
+  }
+  footer .rrss .rrss-width:hover {
+    animation: none;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    opacity: 1;
+    transition: none;
   }
 }
 
 /*MOBILE MEDIA QUERY*/
-@media only screen and (min-width: 360px) and (hover: none), only screen and (min-width: 360px) and (-webkit-transform: none), only screen and (min-width: 360px) and (-moz-transform: none), only screen and (min-width: 360px) and (-ms-high-contrast: none) {
+@media only screen and (min-width: 360px) and (orientation: portrait) {
+  /*Estilos generales*/
   body {
     font-size: 0.76923em;
     margin-left: 0;
@@ -675,6 +1261,10 @@ footer .footer-paginas {
   .logo-en-menu:hover {
     animation: none;
     transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    opacity: 1;
+    transition: none;
   }
   /*Título Tranki Punki*/
   .titulo-sin-animacion {
@@ -684,17 +1274,6 @@ footer .footer-paginas {
   }
   body {
     width: 100%;
-  }
-  /*INDEX*/
-  /*Título Tranki Punki Animado*/
-  .container-fluid {
-    /*Vídeo y Player de música*/
-  }
-  .container-fluid .contenedor-del-titulo-animado .row .titulo-animado {
-    width: 90%;
-  }
-  .container-fluid .audio-player {
-    bottom: 10px;
   }
   /*Menú*/
   .dropdown-toggle {
@@ -706,6 +1285,11 @@ footer .footer-paginas {
     text-align: center;
     margin-left: auto;
     margin-bottom: 3px;
+  }
+  /*PÁGINA INDEX*/
+  /*Video background*/
+  .container-fluid .video {
+    opacity: 0.5;
   }
   /*PÁGINA BIO*/
   /*Grid*/
@@ -719,9 +1303,13 @@ footer .footer-paginas {
   figure.pushup figcaption {
     opacity: 0;
   }
-  figure.pushup:hover img {
+  figure.pushup:hover {
+    animation: none;
     transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
     opacity: 1;
+    transition: none;
   }
   /*PÁGINA MÚSICA*/
   .section-musica .bloque .iframe-musica {
@@ -781,157 +1369,133 @@ footer .footer-paginas {
     font-size: 1em;
   }
   /*FOOTER*/
-  footer {
+  .footer-del-index {
+    margin-bottom: 80px;
+  }
+  footer h1 {
+    font-size: 1.33333em;
+  }
+  footer .color-verde {
+    font-size: 0.83333em;
     color: #00ff94;
-    font-size: 1em;
-    margin-top: -1%;
+    margin-bottom: 5px;
   }
-  footer .texto-derechos {
+  footer .color-fucsia {
+    font-size: 0.83333em;
     color: #f800ff;
-    margin-top: -5%;
+    font-weight: bold;
+    text-decoration-line: none;
   }
-}
-
-/*MOBILE XL MEDIA QUERY*/
-@media only screen and (min-width: 410px) and (hover: none), only screen and (min-width: 410px) and (-webkit-transform: none), only screen and (min-width: 410px) and (-moz-transform: none), only screen and (min-width: 410px) and (-ms-high-contrast: none) {
-  body {
-    font-size: 1em;
-    margin-left: 0;
-  }
-  body h2 {
-    font-size: 3em;
-    margin-bottom: 6%;
+  footer .color-fucsia:hover {
     color: #f800ff;
   }
-  body h3 {
-    font-size: 2em;
-    margin-bottom: 5%;
-    color: #00ff94;
+  footer .color-blanco {
+    font-size: 0.83333em;
+    color: white;
   }
-  section {
-    margin-bottom: 30px;
+  footer .footer-del-index {
+    position: absolute;
+    bottom: -350px;
+    left: 0;
+    z-index: 0;
+    width: 99%;
   }
-  article {
-    margin-bottom: 30px;
+  footer .footer-del-index h1 {
+    margin-top: 2%;
+    margin-bottom: 2%;
   }
-  /*Logo del menú*/
-  .logo-en-menu {
-    margin-top: 5px;
-    margin-left: 5px;
-    width: 35px;
+  footer .footer-paginas {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    z-index: 0;
+    width: 99%;
   }
-  .logo-en-menu:hover {
+  footer .nav-del-footer .nav-del-footer-main {
+    display: grid;
+    margin-left: 3%;
+    margin-right: 6%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    grid-template-columns: 5% 20% 15% 30% 20% 5%;
+    grid-template-rows: 50% 50%;
+    grid-row-gap: 5px;
+  }
+  footer .nav-del-footer .inicio-li {
+    display: grid;
+    align-self: center;
+    justify-content: flex-start;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  footer .nav-del-footer .bio-li {
+    display: grid;
+    align-self: center;
+    grid-column: 3;
+    grid-row: 1;
+  }
+  footer .nav-del-footer .musica-li {
+    display: grid;
+    align-self: center;
+    grid-column: 4;
+    grid-row: 1;
+  }
+  footer .nav-del-footer .videos-li {
+    display: grid;
+    align-self: center;
+    justify-content: flex-end;
+    grid-column: 5;
+    grid-row: 1;
+  }
+  footer .nav-del-footer .galeria-li {
+    display: grid;
+    align-self: center;
+    justify-content: flex-start;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  footer .nav-del-footer .prensa-li {
+    display: grid;
+    align-self: center;
+    grid-row: 2;
+    grid-column: 3 / 5;
+  }
+  footer .nav-del-footer .contacto-li {
+    display: grid;
+    align-self: center;
+    justify-content: flex-end;
+    grid-column: 5;
+    grid-row: 2;
+  }
+  footer .nav-del-footer .footer-nav-link {
+    font-size: 9px;
+    color: gray;
+    text-decoration-line: none;
+  }
+  footer .nav-del-footer .footer-nav-link:hover {
+    color: gray;
+  }
+  footer .rrss {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  footer .rrss .rrss-width {
+    width: 60%;
+  }
+  footer .rrss .rrss-width:hover {
     animation: none;
     transform: none;
-  }
-  /*Título Tranki Punki*/
-  .titulo-sin-animacion {
-    width: 300px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-  body {
-    width: 100%;
-  }
-  /*Menú*/
-  .dropdown-toggle {
-    margin-bottom: -10px;
-  }
-  a.dropdown-item {
-    color: #f800ff;
-    font-size: 15px;
-    text-align: center;
-    margin-left: auto;
-    margin-bottom: 3px;
-  }
-  /*PÁGINA BIO*/
-  /*Grid*/
-  .seccion-integrantes {
-    margin-bottom: 20%;
-  }
-  .seccion-integrantes main {
-    width: 70%;
-  }
-  /*EFECTO PUSHUP BIO GRID*/
-  figure.pushup figcaption {
-    opacity: 0;
-  }
-  figure.pushup:hover img {
-    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
     opacity: 1;
-  }
-  /*PÁGINA MÚSICA*/
-  .section-musica .bloque .iframe-musica {
-    margin-top: 5%;
-    margin-bottom: 7%;
-    border: 0;
-    width: 340px;
-    height: 460px;
-  }
-  /*PÁGINA VÍDEOS*/
-  .videos {
-    margin-bottom: -20px;
-    display: flex;
-    flex-flow: wrap row;
-    justify-content: center;
-  }
-  .videos .cada-video {
-    max-width: 90%;
-    padding: 5%, 5%, 5%, 5%;
-  }
-  /*PÁGINA PRENSA*/
-  .texto-en-bloque {
-    margin-left: 5%;
-    margin-right: 5%;
-    font-size: 1em;
-    text-align: center;
-  }
-  /*GRID PRENSA*/
-  .seccion-prensa {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .seccion-prensa .prensa-main {
-    grid-row-gap: 25px;
-    margin-top: 40px;
-    margin-bottom: 90px;
-    grid-template-columns: 5% 45% 45% 5%;
-  }
-  .seccion-prensa .prensa-link-width {
-    width: 80%;
-  }
-  /*CONTACTO FORMULARIO*/
-  .seccion-contacto {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  .seccion-contacto .formulario {
-    font-size: 1em;
-  }
-  .seccion-contacto .formulario .textarea-width {
-    width: 340px;
-  }
-  .seccion-contacto .formulario .boton-formulario {
-    padding: 5px 32px;
-    margin-top: 10px;
-    text-align: center;
-    font-size: 1em;
-  }
-  /*FOOTER*/
-  footer {
-    color: #00ff94;
-    font-size: 1em;
-    margin-top: -1%;
-  }
-  footer .texto-derechos {
-    color: #f800ff;
-    margin-top: -3%;
-    margin-bottom: 10%;
+    transition: none;
   }
 }
 
 /*TABLET MEDIA QUERY*/
-@media only screen and (min-width: 640px) and (hover: none), only screen and (min-width: 640px) and (-webkit-transform: none), only screen and (min-width: 640px) and (-moz-transform: none), only screen and (min-width: 640px) and (-ms-high-contrast: none) {
+@media only screen and (min-width: 640px) and (orientation: portrait) {
   body {
     font-size: 0.90909em;
     margin-left: 0;
@@ -961,6 +1525,10 @@ footer .footer-paginas {
   .logo-en-menu:hover {
     animation: none;
     transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    opacity: 1;
+    transition: none;
   }
   /*Título Tranki Punki*/
   .titulo-sin-animacion {
@@ -994,9 +1562,13 @@ footer .footer-paginas {
   figure.pushup figcaption {
     opacity: 0;
   }
-  figure.pushup:hover img {
+  figure.pushup:hover {
+    animation: none;
     transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
     opacity: 1;
+    transition: none;
   }
   /*PÁGINA MÚSICA*/
   .section-musica {
@@ -1060,21 +1632,11 @@ footer .footer-paginas {
     text-align: center;
     font-size: 1em;
   }
-  /*FOOTER*/
-  footer {
-    color: #00ff94;
-    font-size: 1em;
-    margin-top: 0%;
-  }
-  footer .texto-derechos {
-    color: #f800ff;
-    margin-top: -1%;
-    margin-bottom: 3%;
-  }
 }
 
 /*NOTEBOOK MEDIA QUERY*/
-@media only screen and (min-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-width: 1200px) and (orientation: landscape) {
+  /*Estilos generales*/
   body {
     font-size: 1.1em;
     margin-left: 0;
@@ -1101,6 +1663,26 @@ footer .footer-paginas {
     margin-left: 5px;
     width: 45px;
   }
+  .logo-en-menu:hover {
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
   /*Título Tranki Punki*/
   .titulo-sin-animacion {
     width: 600px;
@@ -1120,6 +1702,17 @@ footer .footer-paginas {
     text-align: right;
     margin-left: -20px;
     margin-bottom: 3px;
+  }
+  /*PÁGINA INDEX*/
+  /*Título Tranki Punki Animado*/
+  .container-fluid {
+    /*Vídeo y Player de música*/
+  }
+  .container-fluid .contenedor-del-titulo-animado .row .titulo-animado {
+    width: 90%;
+  }
+  .container-fluid .audio-player {
+    bottom: 10px;
   }
   /*PÁGINA BIO*/
   /*Grid*/
@@ -1266,21 +1859,10 @@ footer .footer-paginas {
     text-align: center;
     font-size: 1em;
   }
-  /*FOOTER*/
-  footer {
-    color: #00ff94;
-    font-size: 1em;
-    margin-top: 0%;
-  }
-  footer .texto-derechos {
-    color: #f800ff;
-    margin-top: -1%;
-    margin-bottom: 3%;
-  }
 }
 
 /*TABLET MEDIA QUERY LANDSCAPE*/
-@media only screen and (min-width: 640px) and (max-width: 1024px) and (orientation: landscape) and (hover: none), only screen and (min-width: 640px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-transform: none), only screen and (min-width: 640px) and (max-width: 1024px) and (orientation: landscape) and (-moz-transform: none), only screen and (min-width: 640px) and (max-width: 1024px) and (orientation: landscape) and (-ms-high-contrast: none) {
+@media only screen and (min-width: 640px) and (max-width: 1024px) and (orientation: landscape) {
   a.dropdown-item {
     color: #f800ff;
     font-size: 15px;
