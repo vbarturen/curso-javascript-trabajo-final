@@ -98,6 +98,14 @@ figure.pushup{
     font-size: $textobody;
     text-align: center;
 }
+.texto-en-bloque-integrantes{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: $textobody;
+    text-align: center;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+}
 /*GRID PRENSA*/
 .seccion-prensa{
     margin-left: 0px;
@@ -130,8 +138,8 @@ figure.pushup{
     }
 }
 /*FOOTER*/
-.footer-del-index{
-    margin-bottom: 80px;
+.footer-general{
+    margin-bottom: 0px;
 }
 footer{
     h1{

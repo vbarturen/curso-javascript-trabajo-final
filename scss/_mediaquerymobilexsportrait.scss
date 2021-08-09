@@ -103,6 +103,14 @@ figure.pushup{
     font-size: $textobody;
     text-align: center;
 }
+.texto-en-bloque-integrantes{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: $textobody;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
 /*GRID PRENSA*/
 .seccion-prensa{
     margin-left: 0px;
@@ -144,7 +152,7 @@ footer{
         color: $verde;
         margin-bottom: 5px;
     }
-    .footer-del-index{
+    .footer-general{
         position: absolute;
         bottom: -250px;
         left: 0;

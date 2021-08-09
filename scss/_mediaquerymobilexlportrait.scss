@@ -1,15 +1,17 @@
 /*MOBILE XL MEDIA QUERY*/
-@media only screen and (min-width: 375px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait){
+@media only screen and (min-width: 413px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait){
     /*Estilos generales*/
     body{
-        font-size: $textobody;
+        font-size: $textobody*1.1;
         margin-left: 0;
     }
     body h2{
         font-size: $tituloh2;
+        margin-top: 6%;
         margin-bottom: 6%;
         color: $fucsia;
     }
+
     body h3{
         font-size: $tituloh3;
         margin-bottom: 5%;
@@ -85,19 +87,19 @@
         }
     }
     /*PÁGINA PRENSA*/
-    .texto-en-bloque{
-        margin-left: 5%;
-        margin-right: 5%;
-        font-size: $textobody;
-        text-align: center;
+    p.texto-en-bloque{
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: $textobody*1.1;
+        text-align: left;
     }
     /*GRID PRENSA*/
-    .seccion-prensa{
+    section.seccion-prensa{
         margin-left: 0px;
         margin-right: 0px;
         .prensa-main{
-            grid-row-gap: 80px;
-            margin-top: 40px;
+            grid-row-gap: 60px;
+            margin-top:40px;
             margin-bottom: 90px;
             grid-template-columns: 5% 45% 45% 5%;
         }
@@ -111,22 +113,36 @@
         margin-right: 5%;
         .formulario{
             font-size: $textobody;
-            .textarea-width{
-                width: 340px;
+            textarea.textarea-width{
+                width: 325px;
+                height:210px;
             }
             .boton-formulario{
                 padding: 5px 32px;
                 margin-top: 10px;
                 text-align: center;
                 font-size: $textobody;
-
             }
         }
     }
+    /*GALERIA*/
+    p.texto-en-bloque-galeria{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 10%;
+        font-size: $textobody*1.1;
+        text-align: center;
+    }
+    h2.h2-galeria{
+        margin-bottom:10%;
+    }
     /*FOOTER*/
     footer{
-    .footer-del-index{
-        margin-bottom: 50px;
+        div.footer-videos.footer-general{
+            margin-bottom:-10px;
+        }
+        .footer-general{
+        margin-bottom: -30px;
         h1{
             font-size: $tituloh1/1.1;
         }
@@ -136,7 +152,7 @@
             margin-bottom: 5px;
         }
         .color-fucsia{
-            font-size: $textofooter;
+            font-size: $textofooter*1.3;
             color: $fucsia;
             font-weight: bold;
             text-decoration-line: none;
@@ -147,24 +163,6 @@
         .color-blanco{
             font-size: $textofooter;
             color: $blanco;
-        }
-        .footer-del-index{
-            position: absolute;
-            bottom: -350px;
-            left: 0;
-            z-index:0;
-            width: 99%;
-            h1{
-                margin-top: 2%;
-                margin-bottom: 2%;
-            }
-        }
-        .footer-paginas{
-            position: absolute;
-            bottom: -100px;
-            left: 0;
-            z-index:0;
-            width: 99%;
         }
         .nav-del-footer{
             .nav-del-footer-main{
@@ -245,4 +243,3 @@
     }
 }
 }
-
