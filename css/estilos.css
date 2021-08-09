@@ -699,7 +699,7 @@ footer .rrss .rrss-width:hover {
 }
 
 /*MOBILE XL MEDIA QUERY*/
-@media only screen and (min-width: 375px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-width: 375px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   /*Estilos generales*/
   body {
     font-size: 1em;
@@ -812,7 +812,7 @@ footer .rrss .rrss-width:hover {
     margin-right: 0px;
   }
   .seccion-prensa .prensa-main {
-    grid-row-gap: 25px;
+    grid-row-gap: 80px;
     margin-top: 40px;
     margin-bottom: 90px;
     grid-template-columns: 5% 45% 45% 5%;
@@ -1230,7 +1230,7 @@ footer .rrss .rrss-width:hover {
 }
 
 /*MOBILE MEDIA QUERY*/
-@media only screen and (min-width: 360px) and (orientation: portrait) {
+@media only screen and (min-width: 360px) and (max-width: 640px) and (orientation: portrait) {
   /*Estilos generales*/
   body {
     font-size: 0.76923em;
@@ -1343,7 +1343,7 @@ footer .rrss .rrss-width:hover {
     margin-right: 0px;
   }
   .seccion-prensa .prensa-main {
-    grid-row-gap: 25px;
+    grid-row-gap: 40px;
     margin-top: 40px;
     margin-bottom: 90px;
     grid-template-columns: 5% 45% 45% 5%;
