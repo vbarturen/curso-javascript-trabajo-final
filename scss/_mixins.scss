@@ -4,7 +4,9 @@
     justify-content: $jus;
 }
 @mixin escalar{
+    &:hover{
     transform: scale(1.1,1.1);
+    }
 }
 @mixin sacudir{
     &:hover{

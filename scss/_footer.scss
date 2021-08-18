@@ -22,7 +22,7 @@ footer{
         font-size: $textofooter;
         color: $verde;
     }
-    .footer-general{
+    .pie-tp{
         position: absolute;
         bottom: -350px;
         left: 0;
@@ -32,13 +32,6 @@ footer{
             margin-top: 2%;
             margin-bottom: 2%;
         }
-    }
-    .footer-paginas{
-        position: absolute;
-        bottom: -100px;
-        left: 0;
-        z-index:0;
-        width: 99%;
     }
     .nav-del-footer{
         .nav-del-footer-main{

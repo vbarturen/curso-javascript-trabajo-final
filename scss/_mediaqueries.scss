@@ -1,8 +1,16 @@
-@import "mediaquerymobilexlportrait";
-@import "mediaquerymobilexsportrait";
-@import "mediaquerymobileportrait";
-@import "mediaquerytabletportrait";
-@import "mediaquerynotebook";
-@import "mediaqueryipad";
-
-
+@import "mediaqueries/min280portrait";
+@import "mediaqueries/min280landscape";
+@import "mediaqueries/min360portrait";
+@import "mediaqueries/min360landscape";
+@import "mediaqueries/min411portrait";
+@import "mediaqueries/min411landscape";
+@import "mediaqueries/min414portrait";
+@import "mediaqueries/min540portrait";
+@import "mediaqueries/min540landscape";
+@import "mediaqueries/min640landscape";
+@import "mediaqueries/min768portrait";
+@import "mediaqueries/min768landscape";
+@import "mediaqueries/min895landscape";
+@import "mediaqueries/min1024portrait";
+@import "mediaqueries/min1030landscape";
+@import "mediaqueries/min1370landscape";
