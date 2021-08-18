@@ -4071,6 +4071,264 @@ footer .rrss .rrss-width:hover {
   }
 }
 
+@media only screen and (min-width: 790px) and (orientation: portrait) {
+  /*ESTILOS GENERALES*/
+  /*Fuentes y secciones*/
+  body {
+    font-size: 1.1em;
+    line-height: 37px;
+    margin-left: 0;
+  }
+  body h2 {
+    font-size: 3em;
+    margin-bottom: 6%;
+    margin-top: 4%;
+    color: #f800ff;
+  }
+  body h3 {
+    font-size: 2em;
+    margin-bottom: 3%;
+    color: #00ff94;
+  }
+  section {
+    margin-bottom: 30px;
+  }
+  article {
+    margin-bottom: 30px;
+  }
+  /*Logo del menú*/
+  .menu-con-bootstrap .logo-tp {
+    display: block;
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 50px;
+  }
+  .menu-con-bootstrap .logo-tp:hover {
+    animation: none;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    opacity: 1;
+    transition: none;
+  }
+  /*Menú*/
+  .dropdown-toggle {
+    margin-bottom: -12px;
+  }
+  a.dropdown-item {
+    color: #f800ff;
+    font-size: 17px;
+    text-align: left;
+    margin-left: -5px;
+    margin-bottom: 3px;
+  }
+  /*Titulo imagen*/
+  .titulo .titulo-tp {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+  }
+  /*BIO*/
+  /*Grid*/
+  .seccion-integrantes {
+    margin-bottom: 10%;
+  }
+  .seccion-integrantes main {
+    width: 77%;
+  }
+  /*PÁGINA MÚSICA*/
+  .section-musica {
+    margin-bottom: -10px;
+  }
+  .section-musica .bloque .iframe-musica {
+    margin-top: 5%;
+    margin-bottom: 7%;
+    border: 0;
+    width: 650px;
+    height: 780px;
+  }
+  /*PÁGINA VÍDEOS*/
+  .section-videos {
+    margin-bottom: 7%;
+  }
+  /*PÁGINA GALERÍA*/
+  .pie-galeria {
+    margin-bottom: -5%;
+  }
+  .texto-en-bloque-galeria {
+    display: none;
+  }
+  .texto-galeria-portrait {
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1em;
+    text-align: center;
+  }
+  /*PÁGINA PRENSA*/
+  .texto-en-bloque {
+    margin-left: 13.5%;
+    margin-right: 10%;
+    font-size: 1em;
+    text-align: left;
+  }
+  /*Grid Prensa*/
+  .seccion-prensa {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .seccion-prensa .prensa-main {
+    grid-row-gap: 70px;
+    margin-top: 8%;
+    margin-bottom: 20%;
+    grid-template-columns: 5% 45% 45% 5%;
+  }
+  .seccion-prensa .prensa-link-width {
+    width: 80%;
+  }
+  /*PÁGINA CONTACTO*/
+  /*Formulario*/
+  .seccion-contacto {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+  }
+  .seccion-contacto .formulario {
+    font-size: 1em;
+  }
+  .seccion-contacto .formulario .textarea-width {
+    width: 660px;
+  }
+  .seccion-contacto .formulario .boton-formulario {
+    padding: 5px 32px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1em;
+  }
+  /*FOOTER*/
+  footer .pie-tp {
+    display: block;
+    position: absolute;
+    bottom: -530px;
+    left: 0;
+    z-index: 0;
+    width: 99%;
+  }
+  footer .pie-tp h1 {
+    font-size: 2em;
+    margin-top: 4%;
+  }
+  footer .pie-tp .color-verde {
+    font-size: 1.08333em;
+    color: #00ff94;
+    margin-bottom: 5px;
+  }
+  footer .pie-tp .color-fucsia {
+    font-size: 1.08333em;
+    color: #f800ff;
+    font-weight: bold;
+    text-decoration-line: none;
+  }
+  footer .pie-tp .color-fucsia:hover {
+    color: #f800ff;
+  }
+  footer .pie-tp .color-blanco {
+    margin-top: 1.16667em;
+    margin-bottom: 30px;
+    font-size: 1em;
+    color: white;
+  }
+  footer .pie-tp .nav-del-footer .nav-del-footer-main {
+    display: grid;
+    margin-left: 13%;
+    margin-right: 16%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    grid-template-columns: 10% 20% 20% 20% 20% 10%;
+    grid-template-rows: 50% 50%;
+    grid-row-gap: 5px;
+  }
+  footer .pie-tp .nav-del-footer .nav-del-footer-main .inicio-li {
+    display: grid;
+    align-self: center;
+    justify-content: flex-start;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  footer .pie-tp .nav-del-footer .nav-del-footer-main .bio-li {
+    display: grid;
+    align-self: center;
+    grid-column: 3;
+    grid-row: 1;
+  }
+  footer .pie-tp .nav-del-footer .nav-del-footer-main .musica-li {
+    display: grid;
+    align-self: center;
+    grid-column: 4;
+    grid-row: 1;
+  }
+  footer .pie-tp .nav-del-footer .nav-del-footer-main .videos-li {
+    display: grid;
+    align-self: center;
+    justify-content: flex-end;
+    grid-column: 5;
+    grid-row: 1;
+  }
+  footer .pie-tp .nav-del-footer .nav-del-footer-main .galeria-li {
+    margin-top: 6%;
+    display: grid;
+    align-self: center;
+    justify-content: flex-start;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  footer .pie-tp .nav-del-footer .nav-del-footer-main .prensa-li {
+    margin-top: 6%;
+    display: grid;
+    align-self: center;
+    grid-row: 2;
+    grid-column: 3 / 5;
+  }
+  footer .pie-tp .nav-del-footer .nav-del-footer-main .contacto-li {
+    margin-top: 6%;
+    display: grid;
+    align-self: center;
+    justify-content: flex-end;
+    grid-column: 5;
+    grid-row: 2;
+  }
+  footer .pie-tp .nav-del-footer .nav-del-footer-main .footer-nav-link {
+    font-size: 17px;
+    color: gray;
+    text-decoration-line: none;
+  }
+  footer .pie-tp .nav-del-footer .nav-del-footer-main .footer-nav-link:hover {
+    color: gray;
+  }
+  footer .pie-tp .nav-del-footer .rrss {
+    margin-top: 10%;
+    margin-bottom: 9%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  footer .pie-tp .nav-del-footer .rrss .rrss-width {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 75%;
+  }
+  footer .pie-tp .nav-del-footer .rrss .rrss-width:hover {
+    animation: none;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    opacity: 1;
+    transition: none;
+  }
+}
+
 @media only screen and (min-width: 895px) and (orientation: landscape) {
   /*ESTILOS GENERALES*/
   /*Fuentes y secciones*/
