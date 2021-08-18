@@ -118,6 +118,9 @@
         text-align: center;
         @include nohover
     }
+    .texto-galeria-portrait{
+        display:none
+    }
 /*PÁGINA PRENSA*/
     .texto-en-bloque{
     margin-left: 13.5%;

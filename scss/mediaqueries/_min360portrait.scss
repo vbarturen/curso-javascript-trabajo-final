@@ -14,7 +14,10 @@
 }
 /*PÁGINA GALERÍA*/
 .texto-en-bloque-galeria{
-    margin-bottom: 10%;
+    display:none
+}
+.texto-galeria-portrait{
+    display:block;
     margin-left: 10%;
     margin-right: 10%;
     font-size: $textobody;

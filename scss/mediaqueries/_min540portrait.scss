@@ -80,14 +80,16 @@
         margin-bottom: 0%;
     }
 /*PÁGINA GALERÍA*/
-    .texto-en-bloque-galeria{
-        margin-bottom: 5%;
-        margin-left: 10%;
-        margin-right: 10%;
-        font-size: $textobody;
-        text-align: center;
-        @include nohover
-    }
+.texto-en-bloque-galeria{
+    display:none
+}
+.texto-galeria-portrait{
+    display:block;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: $textobody;
+    text-align: center;
+}
 /*PÁGINA PRENSA*/
     .texto-en-bloque{
     margin-left: 13.5%;

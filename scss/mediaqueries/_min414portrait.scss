@@ -128,6 +128,17 @@
                 }
             }
         }
+    /*PÁGINA GALERÍA*/
+    .texto-en-bloque-galeria{
+        display:none
+    }
+    .texto-galeria-portrait{
+        display:block;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: $textobody;
+        text-align: center;
+    }
     /*FOOTER*/
         footer{
             .pie-tp{

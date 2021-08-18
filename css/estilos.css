@@ -89,7 +89,7 @@ a:link {
 
 /*Links visitados*/
 a:visited {
-  color: white;
+  color: #00ff94;
   font-weight: bold;
 }
 
@@ -819,19 +819,14 @@ footer .rrss .rrss-width:hover {
   }
   /*PÁGINA GALERÍA*/
   .texto-en-bloque-galeria {
-    margin-bottom: 10%;
+    display: none;
+  }
+  .texto-galeria-portrait {
+    display: block;
     margin-left: 10%;
     margin-right: 10%;
     font-size: 1em;
     text-align: center;
-  }
-  .texto-en-bloque-galeria:hover {
-    animation: none;
-    transform: none;
-    -webkit-transform: none;
-    -moz-transform: none;
-    opacity: 1;
-    transition: none;
   }
   /*PÁGINA PRENSA*/
   .texto-en-bloque {
@@ -1120,6 +1115,9 @@ footer .rrss .rrss-width:hover {
     opacity: 1;
     transition: none;
   }
+  .texto-galeria-portrait {
+    display: none;
+  }
   /*PÁGINA PRENSA*/
   .texto-en-bloque {
     margin-left: 13.5%;
@@ -1291,7 +1289,10 @@ footer .rrss .rrss-width:hover {
   }
   /*PÁGINA GALERÍA*/
   .texto-en-bloque-galeria {
-    margin-bottom: 10%;
+    display: none;
+  }
+  .texto-galeria-portrait {
+    display: block;
     margin-left: 10%;
     margin-right: 10%;
     font-size: 1em;
@@ -1472,6 +1473,10 @@ footer .rrss .rrss-width:hover {
     margin-left: -6px;
     margin-bottom: 3px;
   }
+  /*PÁGINA GALERÍA*/
+  .texto-galeria-portrait {
+    display: none;
+  }
   /*PÁGINA CONTACTO*/
   /*Formulario*/
   .seccion-contacto {
@@ -1616,6 +1621,17 @@ footer .rrss .rrss-width:hover {
     margin-top: 10px;
     text-align: center;
     font-size: 1em;
+  }
+  /*PÁGINA GALERÍA*/
+  .texto-en-bloque-galeria {
+    display: none;
+  }
+  .texto-galeria-portrait {
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1em;
+    text-align: center;
   }
   /*FOOTER*/
   footer .pie-tp {
@@ -1909,6 +1925,9 @@ footer .rrss .rrss-width:hover {
     font-size: 1em;
     text-align: center;
   }
+  .texto-galeria-portrait {
+    display: none;
+  }
   /*PÁGINA CONTACTO*/
   /*Formulario*/
   .seccion-contacto {
@@ -2194,6 +2213,17 @@ footer .rrss .rrss-width:hover {
     text-align: center;
     font-size: 1em;
   }
+  /*PÁGINA GALERÍA*/
+  .texto-en-bloque-galeria {
+    display: none;
+  }
+  .texto-galeria-portrait {
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1em;
+    text-align: center;
+  }
   /*FOOTER*/
   footer .pie-tp {
     display: block;
@@ -2392,19 +2422,14 @@ footer .rrss .rrss-width:hover {
   }
   /*PÁGINA GALERÍA*/
   .texto-en-bloque-galeria {
-    margin-bottom: 5%;
+    display: none;
+  }
+  .texto-galeria-portrait {
+    display: block;
     margin-left: 10%;
     margin-right: 10%;
     font-size: 1em;
     text-align: center;
-  }
-  .texto-en-bloque-galeria:hover {
-    animation: none;
-    transform: none;
-    -webkit-transform: none;
-    -moz-transform: none;
-    opacity: 1;
-    transition: none;
   }
   /*PÁGINA PRENSA*/
   .texto-en-bloque {
@@ -2758,6 +2783,9 @@ footer .rrss .rrss-width:hover {
     font-size: 1em;
     text-align: center;
   }
+  .texto-galeria-portrait {
+    display: none;
+  }
   /*PÁGINA CONTACTO*/
   /*Formulario*/
   .seccion-contacto {
@@ -3083,6 +3111,9 @@ footer .rrss .rrss-width:hover {
     font-size: 1em;
     text-align: center;
   }
+  .texto-galeria-portrait {
+    display: none;
+  }
   /*PÁGINA CONTACTO*/
   /*Formulario*/
   .seccion-contacto {
@@ -3219,7 +3250,7 @@ footer .rrss .rrss-width:hover {
   }
 }
 
-@media only screen and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 580px) and (orientation: portrait) {
   /*ESTILOS GENERALES*/
   /*Fuentes y secciones*/
   body {
@@ -3307,19 +3338,14 @@ footer .rrss .rrss-width:hover {
     margin-bottom: -5%;
   }
   .texto-en-bloque-galeria {
-    margin-bottom: 5%;
+    display: none;
+  }
+  .texto-galeria-portrait {
+    display: block;
     margin-left: 10%;
     margin-right: 10%;
     font-size: 1em;
     text-align: center;
-  }
-  .texto-en-bloque-galeria:hover {
-    animation: none;
-    transform: none;
-    -webkit-transform: none;
-    -moz-transform: none;
-    opacity: 1;
-    transition: none;
   }
   /*PÁGINA PRENSA*/
   .texto-en-bloque {
@@ -3660,6 +3686,9 @@ footer .rrss .rrss-width:hover {
     font-size: 1em;
     text-align: center;
   }
+  .texto-galeria-portrait {
+    display: none;
+  }
   /*PÁGINA CONTACTO*/
   /*Formulario*/
   .seccion-contacto {
@@ -3970,6 +3999,9 @@ footer .rrss .rrss-width:hover {
     font-size: 1em;
     text-align: center;
   }
+  .texto-galeria-portrait {
+    display: none;
+  }
   /*PÁGINA CONTACTO*/
   /*Formulario*/
   .seccion-contacto {
@@ -4194,19 +4226,14 @@ footer .rrss .rrss-width:hover {
     margin-bottom: -5%;
   }
   .texto-en-bloque-galeria {
-    margin-bottom: 5%;
+    display: none;
+  }
+  .texto-galeria-portrait {
+    display: block;
     margin-left: 10%;
     margin-right: 10%;
     font-size: 1em;
     text-align: center;
-  }
-  .texto-en-bloque-galeria:hover {
-    animation: none;
-    transform: none;
-    -webkit-transform: none;
-    -moz-transform: none;
-    opacity: 1;
-    transition: none;
   }
   /*PÁGINA PRENSA*/
   .texto-en-bloque {
@@ -4586,6 +4613,9 @@ footer .rrss .rrss-width:hover {
     font-size: 1em;
     text-align: center;
   }
+  .texto-galeria-portrait {
+    display: none;
+  }
   /*PÁGINA CONTACTO*/
   /*Formulario*/
   .seccion-contacto {
@@ -4886,6 +4916,10 @@ footer .rrss .rrss-width:hover {
   }
   .seccion-prensa .prensa-link-width:hover:hover {
     transform: scale(1.1, 1.1);
+  }
+  /*PÁGINA GALERÍA*/
+  .texto-galeria-portrait {
+    display: none;
   }
   /*FOOTER*/
   footer .pie-tp {
