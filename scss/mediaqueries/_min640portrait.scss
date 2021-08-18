@@ -1,0 +1,241 @@
+@media only screen and (min-width: 640px) and (orientation: portrait){
+/*ESTILOS GENERALES*/
+    /*Fuentes y secciones*/
+    body{
+        font-size: $textobody/1.1;
+        margin-left: 0;
+    }
+    body h2{
+        font-size: $tituloh2/1.1;
+        margin-bottom: 6%;
+        margin-top: 4%;
+        color: $fucsia;
+    }
+    body h3{
+        font-size: $tituloh3/1.2;
+        margin-bottom: 5%;
+        color: $verde;
+    }
+    section{
+        margin-bottom: 30px;
+    }
+    article{
+        margin-bottom: 30px;
+    }
+    a.dropdown-item{
+        color:$fucsia;
+        font-size: 15px;
+        text-align: center;
+        margin-left: auto;
+        margin-bottom: 3px;
+    }
+    /*Logo del menú*/
+    .menu-con-bootstrap{
+                    .logo-tp{
+                        display:block;
+                        margin-top: 5px;
+                        margin-left: 5px;
+                        width: 40px;
+                        @include nohover
+                    }
+                }
+    /*Menú*/
+    .dropdown-toggle{
+        margin-bottom: -10px;
+    }
+    /*Titulo imagen*/
+    .titulo{
+        .titulo-tp{
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 400px;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+        }
+    }
+/*BIO*/
+    /*Grid*/
+    .seccion-integrantes{
+        margin-bottom: 10%;
+        main{
+            width:73%;
+        }
+    }
+/*PÁGINA MÚSICA*/
+    .section-musica{
+        margin-bottom: -10px;
+        .bloque{
+            .iframe-musica{
+                margin-top: 5%;
+                margin-bottom: 7%;
+                border: 0; 
+                width: 460px;
+                height: 580px;
+            }
+        }
+    }
+/*PÁGINA VÍDEOS*/
+    .section-videos{
+        margin-bottom: 0%;
+    }
+/*PÁGINA GALERÍA*/
+.texto-en-bloque-galeria{
+    display:none
+}
+.texto-galeria-portrait{
+    display:block;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: $textobody;
+    text-align: center;
+}
+/*PÁGINA PRENSA*/
+    .texto-en-bloque{
+    margin-left: 13.5%;
+    margin-right: 10%;
+    font-size: $textobody;
+    text-align: left;
+    }
+/*Grid Prensa*/
+.seccion-prensa{
+    margin-left: 0px;
+    margin-right: 0px;
+    .prensa-main{
+        grid-row-gap: 40px;
+        margin-top: 3%;
+        margin-bottom: 13%;
+        grid-template-columns: 5% 45% 45% 5%;
+    }
+    .prensa-link-width{
+        width:80%;
+    }
+}
+/*PÁGINA CONTACTO*/
+/*Formulario*/
+.seccion-contacto{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 0%;
+    .formulario{
+        font-size: $textobody;
+        .textarea-width{
+            width: 440px;
+        }
+        .boton-formulario{
+            padding: 5px 32px;
+            margin-top: 10px;
+            text-align: center;
+            font-size: $textobody;
+        }
+    }
+}
+/*FOOTER*/
+    footer{
+        .pie-tp{
+                display:block;
+                position: absolute;
+                bottom: -370px;
+                left: 0;
+                z-index:0;
+                width: 99%;
+                h1{
+                    font-size: $tituloh1/1.3;
+                }
+                .color-verde{
+                    font-size: $textofooter;
+                    color: $verde;
+                    margin-bottom: 5px;
+                }
+                .color-fucsia{
+                    font-size: $textofooter*1.3;
+                    color: $fucsia;
+                    font-weight: bold;
+                    text-decoration-line: none;
+                    &:hover{
+                        color:$fucsia;
+                    }
+                }
+                .color-blanco{
+                    font-size: $textofooter;
+                    color: $blanco;
+                }
+            .nav-del-footer{
+                .nav-del-footer-main{
+                    display: grid;
+                    margin-left: 12%;
+                    margin-right: 14%;
+                    margin-top: 5%;
+                    margin-bottom: 1%;
+                    grid-template-columns: 5% 20% 15% 30% 20% 5%;
+                    grid-template-rows: 50% 50%;
+                    grid-row-gap: 5px;
+                }
+                .inicio-li{
+                    display:grid;
+                    align-self: center; 
+                    justify-content: flex-start;
+                    grid-column: 2;
+                    grid-row: 1;
+                }
+                .bio-li{
+                    display:grid;
+                    align-self: center;
+                    grid-column: 3;
+                    grid-row: 1;
+                }
+                .musica-li{
+                    display:grid;
+                    align-self: center;
+                    grid-column: 4;
+                    grid-row: 1;
+                }
+                .videos-li{
+                    display:grid;
+                    align-self: center;
+                    justify-content: flex-end;
+                    grid-column: 5;
+                    grid-row: 1;
+                }
+                .galeria-li{
+                    display:grid;
+                    align-self: center;
+                    justify-content: flex-start;
+                    grid-column: 2;
+                    grid-row: 2;
+                }
+                .prensa-li{
+                    display:grid;
+                    align-self: center;
+                    grid-row: 2;
+                    grid-column: 3 / 5;
+                }
+                .contacto-li{
+                    display:grid;
+                    align-self: center;
+                    justify-content: flex-end;
+                    grid-column: 5;
+                    grid-row: 2;
+                }
+                .footer-nav-link{
+                    font-size: 12px;
+                    color:gray;
+                    text-decoration-line:none;
+                    &:hover{
+                        color:gray;
+                    }
+                }
+            }
+            .rrss{
+                margin-top: 10%;
+                margin-bottom: 10%;
+                margin-left: 20%;
+                margin-right: 20%;
+                .rrss-width{
+                    width: 65%;
+                    @include nohover
+                }
+            }
+        }
+    }
+}
