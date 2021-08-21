@@ -39,3 +39,8 @@ Se analizó con SEO minion.
  - Favicon: Fue añadido en varios tamaños para diferentes dispositivos.
  - Sección Integrantes en la página BIO: Se destaca por la originalidad en la disposición y en el efecto del hover y el caption de cada imagen.
  - Sección galería: Se utilizó *srscet* en html y *block display* en css para pulir detalles del responsive.
+  
+## Agradecimientos:
+- A la camada 16640 de Desarrollo Web de CoderHouse.
+- A la profesora [Mercedes Passano](https://www.linkedin.com/in/maria-mercedes-passano/).
+- A mi tutor [Pablo Pagella](https://www.linkedin.com/in/pablo-ezequiel-pagella-7b1018183/).
