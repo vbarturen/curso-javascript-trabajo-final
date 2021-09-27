@@ -13,8 +13,7 @@ do{
             };
     addToCart(option, amount);
     moreProducts = prompt('¿Deseás agregar más productos a la cuenta? S/N');
-}while (moreProducts === 'S' || moreProducts === 's');
-
+} while (moreProducts === 'S' || moreProducts === 's');
 
 /*If the cart price is over 0, it means that the sell can be executed. Operations are performed in order to know what the cost of the product depending on the payment method will be.*/
 if(cart > 0){
@@ -30,11 +29,11 @@ let ahora12Payment = add (add (cart, ivaFunction(cart)), ahora12Function(cart));
 let ahora18Payment = add(add(cart, ivaFunction(cart)), ahora18Function(cart));
 
 /*This alert informs the cost of the product depending on the payment method*/
-alert (`Si abonás con ${arrayPaymentMethods[0].title}, pagarás un total de $${bankTransferPayment}.
-Si abonás con ${arrayPaymentMethods[1].title}, pagarás un total de $${mercadoPagoQRPayment}.
-Si abonás con ${arrayPaymentMethods[2].title}, pagarás un total de $${mercadoPagoOthersPayment}.
-Si abonás con ${arrayPaymentMethods[3].title}, pagarás un total de $${ahora12Payment}.
-Si abonás con ${arrayPaymentMethods[4].title}, pagarás un total de $${ahora18Payment}.`);
+alert (`Si abonas con ${arrayPaymentMethods[0].title}, pagaras un total de $${bankTransferPayment}.
+Si abonas con ${arrayPaymentMethods[1].title}, pagaras un total de $${mercadoPagoQRPayment}.
+Si abonas con ${arrayPaymentMethods[2].title}, pagaras un total de $${mercadoPagoOthersPayment}.
+Si abonas con ${arrayPaymentMethods[3].title}, pagaras un total de $${ahora12Payment}.
+Si abonas con ${arrayPaymentMethods[4].title}, pagaras un total de $${ahora18Payment}.`);
 
 /*This for iteration is used to inform the details of each payment method via console */
 for (const arrayPaymentMethod of arrayPaymentMethods) {
