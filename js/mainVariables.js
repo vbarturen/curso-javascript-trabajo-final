@@ -17,6 +17,3 @@ let arrayPaymentMethods = [
 
 /* Initial state of the cart */
 let cart = 0;
-
-/* Possible answer per prompt */
-let moreProducts = 'S';
