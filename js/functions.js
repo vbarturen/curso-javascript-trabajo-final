@@ -15,9 +15,9 @@ const showMenu = () =>{
     products.forEach((product) =>{
         menu += product.id + '. ' + product.title + '\n'; 
     })
-    menu += (products.length + 1) + '. Salir'
+    menu += (products.length + 1) + '. Salir';
     return parseInt(prompt(menu));
-}
+};
 
 /* Function for adding products in the cart /*
 menuOption = The option the user selected

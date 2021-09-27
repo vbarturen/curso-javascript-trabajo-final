@@ -2,12 +2,19 @@
 alert('Bienvenidx a la tienda online de nuestro merchandising')
 
 do{
-    let option = showMenu();
+    let option = parseInt (showMenu());
     if (option === products.length + 1) break; 
     let amount = parseInt(prompt('Indica la cantidad que deseas.'));
+        if(!isNaN(amount)){ 
+            console.log(`Se ingresó ${amount}.`)}
+            else{
+                alert('Error. No se ingresó un número. Actualice la página.');
+                break;
+            }
+    ;
     addToCart(option, amount);
     moreProducts = prompt('¿Deseás agregar más productos a la cuenta? S/N');
-}while (moreProducts === "S");
+}while (moreProducts === "S", "s");
 
 /*If the cart price is over 0, it means that the sell can be executed. Operations are performed in order to know what the cost of the product depending on the payment method will be.*/
 if(cart > 0){
@@ -36,4 +43,4 @@ for (const arrayPaymentMethod of arrayPaymentMethods) {
 }
 
 /*Greeting alert*/
-alert('Gracias por tu visita')}
+alert('Gracias por tu visita.')}
