@@ -34,65 +34,6 @@ footer{
         }
     }
     .nav-del-footer{
-        .nav-del-footer-main{
-            display: grid;
-            margin-left: 13%;
-            margin-right: 16%;
-            margin-top: 1%;
-            margin-bottom: 1%;
-            grid-template-columns: 30% 5% 4% 6% 6% 6% 7% 7% 29%;
-            grid-template-rows: 100%;
-            grid-row-gap: 50px;
-        }
-        .inicio-li{
-            grid-column-start: 2; 
-            grid-row-start: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .bio-li{
-            grid-column-start: 3;  
-            grid-row-start: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .musica-li{
-            grid-column-start: 4;  
-            grid-row-start: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .videos-li{
-            grid-column-start: 5;  
-            grid-row-start: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .galeria-li{
-            grid-column-start: 6;  
-            grid-row-start: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;        
-        }
-        .prensa-li{
-            grid-column-start: 7;  
-            grid-row-start: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .contacto-li{
-            grid-column-start: 8;  
-            grid-row-start: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
         .footer-nav-link{
             font-size: $textofooter;
             color:gray;
@@ -160,7 +101,7 @@ footer{
             justify-content: center;
         }
         .rrss-width{
-            width: 60%;
+            width: 25px;
             @include sacudir;
         }
     }

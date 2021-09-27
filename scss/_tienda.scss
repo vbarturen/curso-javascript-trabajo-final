@@ -1,0 +1,5 @@
+html body section.section-tienda main.container div.row.mb-3 div.col-sm-3 a img.img-fluid{
+    &:hover{
+        @include escalar;
+    }
+}
