@@ -37,4 +37,3 @@ for (const arrayPaymentMethod of arrayPaymentMethods) {
 
 /*Greeting alert*/
 alert('Gracias por tu visita')}
-
